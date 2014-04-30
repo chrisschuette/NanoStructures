@@ -1,0 +1,27 @@
+NRG:
+{
+	U = 0.1;
+	epsF = -0.05;
+	temperature = 1e-20;
+	clusterEnergy = 1e-5;
+	energyCutOff = 8.0;
+	maxHSdimension = 1000;
+};
+
+Broadener:
+{
+	PPD = 100;
+	peakWidth = 0.7;
+};
+
+DMFT:
+{
+	U = 1.0;
+	mu = 0.0;
+	temperature = 1e-8;
+	delta = 0.001;
+	scaling = 100.0;
+	tolerance = 0.995;
+	maxIterations = 100;
+	initialS = "final2/S_20.dat";
+};

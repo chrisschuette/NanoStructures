@@ -1,0 +1,28 @@
+#convention over configuration
+
+MI:
+{
+	U = 20.0;
+	S = "MI/S.dat";
+	rhoB = 1.0;
+};
+
+BI:
+{
+	U = 1.0;
+	S = "BI/S.dat";
+	mu = 0.0;
+	rhoB = 2.0;
+};
+
+structure:
+{
+	L = "MI";
+	layers:
+	{
+		MIL = ("MI", 2);
+		BIM = ("BI", 1);
+		MIR = ("MI", 2);
+	};
+	R = "MI";
+};
