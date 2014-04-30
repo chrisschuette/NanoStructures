@@ -1,0 +1,9 @@
+<map id="nrg::NRG::setupHamiltonian" name="nrg::NRG::setupHamiltonian">
+<area shape="rect" id="node2" href="$classnrg_1_1_hilbert_space_table.html#af43e350488ce220de077a4337ae2705c" title="returns a pointer to the HilbertSubSpace for a given iteration, charge Q and spin Sz..." alt="" coords="278,5,466,54"/>
+<area shape="rect" id="node3" href="$classnrg_1_1_hilbert_sub_space.html#a04f419a9b01137c9eef25f5beaaee464" title="returns the numer of kept states for the subspace " alt="" coords="283,78,461,127"/>
+<area shape="rect" id="node4" href="$classnrg_1_1_hilbert_sub_space.html#a38e645a168fafd9a1baff2eb1c55c42b" title="returns reference to the Hamiltonian/unitary transformation After diagonalization Lapack turns this H..." alt="" coords="283,151,461,201"/>
+<area shape="rect" id="node5" href="$classnrg_1_1_hilbert_sub_space.html#ad9d2bd279161b253cd7cedb1ebbbc5e0" title="sets the number of kept states for the subspace " alt="" coords="283,225,461,274"/>
+<area shape="rect" id="node6" href="$classnrg_1_1_hilbert_sub_space.html#a3d22197cd5a3a1749c80dcafa6b702d8" title="sets the # of kept states for ith hilbert space of the prev. iteration " alt="" coords="283,298,461,347"/>
+<area shape="rect" id="node7" href="$classnrg_1_1_hilbert_sub_space.html#a1383304e7249e45be7714a1d57a65f48" title="returns a reference to the vector of eigenenergies " alt="" coords="283,371,461,421"/>
+<area shape="rect" id="node8" href="$classnrg_1_1_hilbert_space_table.html#af643abf5908019f676f34a17ec24ee5f" title="sets the HilbertSubSpace for a given iteration, charge Q and spin Sz. " alt="" coords="278,445,466,494"/>
+</map>

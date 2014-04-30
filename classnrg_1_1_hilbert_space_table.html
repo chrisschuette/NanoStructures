@@ -55,7 +55,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -73,15 +73,28 @@
 <div class="title">nrg::HilbertSpaceTable Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classnrg_1_1_hilbert_space_table.html" title="HilbertSpaceTable: Manages the table of HilbertSubSpace instances. ">HilbertSpaceTable</a>: Manages the table of <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> instances.  
+ <a href="classnrg_1_1_hilbert_space_table.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="hilbertspacetable_8h_source.html">hilbertspacetable.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af43e350488ce220de077a4337ae2705c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af43e350488ce220de077a4337ae2705c"></a>
-<a class="el" href="classnrg_1_1_hilbert_sub_space.html">HilbertSubSpace</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>getHS</b> (int iteration, int Q, int Sz)</td></tr>
+<tr class="memitem:ab6ff5233673722df306876001462577b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6ff5233673722df306876001462577b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_hilbert_space_table.html#ab6ff5233673722df306876001462577b">HilbertSpaceTable</a> ()</td></tr>
+<tr class="memdesc:ab6ff5233673722df306876001462577b"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs a table of <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> instances. The size of the table is determined by MAXITER, MAXQ, MAXSZ <br/></td></tr>
+<tr class="separator:ab6ff5233673722df306876001462577b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af43e350488ce220de077a4337ae2705c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classnrg_1_1_hilbert_sub_space.html">HilbertSubSpace</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_hilbert_space_table.html#af43e350488ce220de077a4337ae2705c">getHS</a> (int iteration, int Q, int Sz)</td></tr>
+<tr class="memdesc:af43e350488ce220de077a4337ae2705c"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a pointer to the <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> for a given iteration, charge Q and spin Sz. If the <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> does not exist NULL is returned.  <a href="#af43e350488ce220de077a4337ae2705c">More...</a><br/></td></tr>
 <tr class="separator:af43e350488ce220de077a4337ae2705c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af643abf5908019f676f34a17ec24ee5f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af643abf5908019f676f34a17ec24ee5f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setHS</b> (int iteration, int Q, int Sz, <a class="el" href="classnrg_1_1_hilbert_sub_space.html">HilbertSubSpace</a> *HS)</td></tr>
+<tr class="memitem:af643abf5908019f676f34a17ec24ee5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_hilbert_space_table.html#af643abf5908019f676f34a17ec24ee5f">setHS</a> (int iteration, int Q, int Sz, <a class="el" href="classnrg_1_1_hilbert_sub_space.html">HilbertSubSpace</a> *HS)</td></tr>
+<tr class="memdesc:af643abf5908019f676f34a17ec24ee5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> for a given iteration, charge Q and spin Sz.  <a href="#af643abf5908019f676f34a17ec24ee5f">More...</a><br/></td></tr>
 <tr class="separator:af643abf5908019f676f34a17ec24ee5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc1f0f670db28515918dcbc6bd85516b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc1f0f670db28515918dcbc6bd85516b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_hilbert_space_table.html#abc1f0f670db28515918dcbc6bd85516b">~HilbertSpaceTable</a> ()</td></tr>
+<tr class="memdesc:abc1f0f670db28515918dcbc6bd85516b"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructs the <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> table and deletes all HilberSubSpace instances. <br/></td></tr>
+<tr class="separator:abc1f0f670db28515918dcbc6bd85516b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -89,6 +102,135 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="classnrg_1_1_hilbert_sub_space.html">HilbertSubSpace</a> **&#160;</td><td class="memItemRight" valign="bottom"><b>m_hilbertSpaces</b></td></tr>
 <tr class="separator:aad93fe55a1f7e8404404d27bd024b500"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classnrg_1_1_hilbert_space_table.html" title="HilbertSpaceTable: Manages the table of HilbertSubSpace instances. ">HilbertSpaceTable</a>: Manages the table of <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> instances. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af43e350488ce220de077a4337ae2705c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classnrg_1_1_hilbert_sub_space.html">HilbertSubSpace</a>* nrg::HilbertSpaceTable::getHS </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Sz</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns a pointer to the <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> for a given iteration, charge Q and spin Sz. If the <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> does not exist NULL is returned. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td>iteration in the chain diagonalization </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td>charge quantum number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Sz</td><td>spin quantum number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pointer to <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> otherwise NULL </dd></dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classnrg_1_1_hilbert_space_table_af43e350488ce220de077a4337ae2705c_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_space_table_af43e350488ce220de077a4337ae2705c_icgraph" alt=""/></div>
+<map name="classnrg_1_1_hilbert_space_table_af43e350488ce220de077a4337ae2705c_icgraph" id="classnrg_1_1_hilbert_space_table_af43e350488ce220de077a4337ae2705c_icgraph">
+<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="243,14,466,45"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af643abf5908019f676f34a17ec24ee5f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::HilbertSpaceTable::setHS </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>Sz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnrg_1_1_hilbert_sub_space.html">HilbertSubSpace</a> *&#160;</td>
+          <td class="paramname"><em>HS</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sets the <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> for a given iteration, charge Q and spin Sz. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td>iteration in the chain diagonalization </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Q</td><td>charge quantum number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">Sz</td><td>spin quantum number </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">HS</td><td>pointer to the <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classnrg_1_1_hilbert_space_table_af643abf5908019f676f34a17ec24ee5f_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_space_table_af643abf5908019f676f34a17ec24ee5f_icgraph" alt=""/></div>
+<map name="classnrg_1_1_hilbert_space_table_af643abf5908019f676f34a17ec24ee5f_icgraph" id="classnrg_1_1_hilbert_space_table_af643abf5908019f676f34a17ec24ee5f_icgraph">
+<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="249,5,460,35"/><area shape="rect" id="node4" href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="243,59,466,90"/><area shape="rect" id="node3" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="515,5,629,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/chris/Documents/Development/Release/nanostructures/nrg/<a class="el" href="hilbertspacetable_8h_source.html">hilbertspacetable.h</a></li>
 <li>/Users/chris/Documents/Development/Release/nanostructures/nrg/hilbertspacetable.cpp</li>
@@ -97,7 +239,7 @@ Protected Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 30 2014 15:13:15 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 30 2014 23:34:05 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

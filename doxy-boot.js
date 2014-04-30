@@ -18,6 +18,7 @@ $( document ).ready(function() {
 	$('img[src="ftv2ns.png"]').replaceWith('<span class="label label-danger">N</span> ');
 	$('img[src="ftv2cl.png"]').replaceWith('<span class="label label-danger">C</span> ');
 	
+	$(".image > img").addClass("img-responsive");
 	$("ul.tablist").addClass("nav nav-pills nav-justified");
 	$("ul.tablist").css("margin-top", "0.5em");
 	$("ul.tablist").css("margin-bottom", "0.5em");

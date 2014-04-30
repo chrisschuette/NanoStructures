@@ -1,0 +1,12 @@
+<map id="nrg::NRG::init" name="nrg::NRG::init">
+<area shape="rect" id="node2" href="$classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="169,307,380,338"/>
+<area shape="rect" id="node3" href="$classnrg_1_1_hilbert_sub_space.html#a1383304e7249e45be7714a1d57a65f48" title="returns a reference to the vector of eigenenergies " alt="" coords="466,5,643,54"/>
+<area shape="rect" id="node4" href="$classnrg_1_1_hilbert_sub_space.html#ad9d2bd279161b253cd7cedb1ebbbc5e0" title="sets the number of kept states for the subspace " alt="" coords="466,78,643,127"/>
+<area shape="rect" id="node5" href="$classnrg_1_1_hilbert_sub_space.html#a4c8504c3aa68b50f5670cf7fdb1f9815" title="retrieves a reference to chain matrix elements for spin up electrons " alt="" coords="462,151,647,201"/>
+<area shape="rect" id="node6" href="$classnrg_1_1_hilbert_sub_space.html#a0469cddd0f12620a19df6d212ff1e765" title="retrieves a reference to impurity matrix elements for spin down electrons Take a look at the &quot;self&#45;en..." alt="" coords="444,225,665,274"/>
+<area shape="rect" id="node7" href="$classnrg_1_1_hilbert_sub_space.html#a2dbc7c43197f64b70df73ba7cffd04e6" title="retrieves a reference to other impurity matrix elements for spin down electrons Take a look at the &quot;s..." alt="" coords="440,298,670,347"/>
+<area shape="rect" id="node8" href="$classnrg_1_1_hilbert_sub_space.html#a4fc335567817b362430b33988b1d5ce8" title="retrieves a reference to chain matrix elements for spin down electrons " alt="" coords="451,371,658,421"/>
+<area shape="rect" id="node9" href="$classnrg_1_1_hilbert_sub_space.html#a3739ad6705a655e1cecf2bf2ae3ce0c5" title="retrieves a reference to impurity matrix elements for spin down electrons Take a look at the &quot;self&#45;en..." alt="" coords="433,445,676,494"/>
+<area shape="rect" id="node10" href="$classnrg_1_1_hilbert_sub_space.html#a898671c9307a06510acd15d0473b74c9" title="retrieves a reference to other impurity matrix elements for spin down electrons Take a look at the &quot;s..." alt="" coords="429,518,680,567"/>
+<area shape="rect" id="node11" href="$classnrg_1_1_hilbert_space_table.html#af643abf5908019f676f34a17ec24ee5f" title="sets the HilbertSubSpace for a given iteration, charge Q and spin Sz. " alt="" coords="461,591,648,641"/>
+</map>

@@ -55,7 +55,7 @@
     <ul class="tablist">
       <li><a href="annotated.html"><span>Class&#160;List</span></a></li>
       <li><a href="classes.html"><span>Class&#160;Index</span></a></li>
-      <li><a href="hierarchy.html"><span>Class&#160;Hierarchy</span></a></li>
+      <li><a href="inherits.html"><span>Class&#160;Hierarchy</span></a></li>
       <li><a href="functions.html"><span>Class&#160;Members</span></a></li>
     </ul>
   </div>
@@ -73,32 +73,41 @@
 <div class="title">nrg::NRG Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Density matrix implementation of the numerical renormalization group.  
+ <a href="classnrg_1_1_n_r_g.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="nrg_8h_source.html">nrg.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4f3ab075bae106cc9d769b909bcd3b23"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f3ab075bae106cc9d769b909bcd3b23"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>NRG</b> (<a class="el" href="classnrg_1_1_chain_provider.html">ChainProvider</a> &amp;chainProvider, <a class="el" href="classnrg_1_1_broadener.html">Broadener</a> &amp;broadener)</td></tr>
+<tr class="memitem:a4f3ab075bae106cc9d769b909bcd3b23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a4f3ab075bae106cc9d769b909bcd3b23">NRG</a> (<a class="el" href="classnrg_1_1_chain_provider.html">ChainProvider</a> &amp;chainProvider, <a class="el" href="classnrg_1_1_broadener.html">Broadener</a> &amp;broadener)</td></tr>
+<tr class="memdesc:a4f3ab075bae106cc9d769b909bcd3b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">constructs an <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> algorithm instance The Wilson chain is provided by an implementation of the <a class="el" href="classnrg_1_1_chain_provider.html">ChainProvider</a> interface. The <a class="el" href="classnrg_1_1_broadener.html">Broadener</a> is used after diagonalization of the chain and calculation of the density matrix to broaden the representation of various correlation functions as a discrete set of delta peaks into continous functions.  <a href="#a4f3ab075bae106cc9d769b909bcd3b23">More...</a><br/></td></tr>
 <tr class="separator:a4f3ab075bae106cc9d769b909bcd3b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d553389916019021754b3a46f228dd5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d553389916019021754b3a46f228dd5"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>configure</b> (<a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a> &amp;configuration)</td></tr>
+<tr class="memitem:a374be5926ec514d39e3027a9369b9662"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a374be5926ec514d39e3027a9369b9662"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a374be5926ec514d39e3027a9369b9662">~NRG</a> ()</td></tr>
+<tr class="memdesc:a374be5926ec514d39e3027a9369b9662"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructs the <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> algorithm object and frees all previously allocated memory. <br/></td></tr>
+<tr class="separator:a374be5926ec514d39e3027a9369b9662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d553389916019021754b3a46f228dd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a8d553389916019021754b3a46f228dd5">configure</a> (<a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a> &amp;configuration)</td></tr>
+<tr class="memdesc:a8d553389916019021754b3a46f228dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">configures the <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> instance with information in the configuration object.  <a href="#a8d553389916019021754b3a46f228dd5">More...</a><br/></td></tr>
 <tr class="separator:a8d553389916019021754b3a46f228dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae076986d428d7d680c467a646dfb820a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae076986d428d7d680c467a646dfb820a"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getU</b> () const </td></tr>
+<tr class="memitem:ae076986d428d7d680c467a646dfb820a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#ae076986d428d7d680c467a646dfb820a">getU</a> () const </td></tr>
+<tr class="memdesc:ae076986d428d7d680c467a646dfb820a"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the strength of the on-site impurity interaction U  <a href="#ae076986d428d7d680c467a646dfb820a">More...</a><br/></td></tr>
 <tr class="separator:ae076986d428d7d680c467a646dfb820a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49aa5d54ee31cd893c461bcd620a8e0d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49aa5d54ee31cd893c461bcd620a8e0d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setU</b> (double U)</td></tr>
+<tr class="memitem:a49aa5d54ee31cd893c461bcd620a8e0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a49aa5d54ee31cd893c461bcd620a8e0d">setU</a> (double U)</td></tr>
+<tr class="memdesc:a49aa5d54ee31cd893c461bcd620a8e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the strength of the on-site impurity interaction U  <a href="#a49aa5d54ee31cd893c461bcd620a8e0d">More...</a><br/></td></tr>
 <tr class="separator:a49aa5d54ee31cd893c461bcd620a8e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0b862f7d9fe2f96b61f8f52daf67924"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0b862f7d9fe2f96b61f8f52daf67924"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getEpsF</b> () const </td></tr>
+<tr class="memitem:ad0b862f7d9fe2f96b61f8f52daf67924"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#ad0b862f7d9fe2f96b61f8f52daf67924">getEpsF</a> () const </td></tr>
+<tr class="memdesc:ad0b862f7d9fe2f96b61f8f52daf67924"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the on-site impurity energy \(\epsilon_f\)  <a href="#ad0b862f7d9fe2f96b61f8f52daf67924">More...</a><br/></td></tr>
 <tr class="separator:ad0b862f7d9fe2f96b61f8f52daf67924"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c8461747f2e58ace9b14e6966bb6800"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c8461747f2e58ace9b14e6966bb6800"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setEpsF</b> (double epsF)</td></tr>
+<tr class="memitem:a4c8461747f2e58ace9b14e6966bb6800"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a4c8461747f2e58ace9b14e6966bb6800">setEpsF</a> (double epsF)</td></tr>
+<tr class="memdesc:a4c8461747f2e58ace9b14e6966bb6800"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the on-site impurity energy \(\epsilon_f\)  <a href="#a4c8461747f2e58ace9b14e6966bb6800">More...</a><br/></td></tr>
 <tr class="separator:a4c8461747f2e58ace9b14e6966bb6800"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d2da4871033be406050c5af5d7cd2dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d2da4871033be406050c5af5d7cd2dd"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getTemperature</b> () const </td></tr>
+<tr class="memitem:a1d2da4871033be406050c5af5d7cd2dd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a1d2da4871033be406050c5af5d7cd2dd">getTemperature</a> () const </td></tr>
+<tr class="memdesc:a1d2da4871033be406050c5af5d7cd2dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the system temperature T  <a href="#a1d2da4871033be406050c5af5d7cd2dd">More...</a><br/></td></tr>
 <tr class="separator:a1d2da4871033be406050c5af5d7cd2dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4a18a1d48d935fe2f226fe6538a8814"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4a18a1d48d935fe2f226fe6538a8814"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setTemperature</b> (double T)</td></tr>
+<tr class="memitem:ab4a18a1d48d935fe2f226fe6538a8814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#ab4a18a1d48d935fe2f226fe6538a8814">setTemperature</a> (double T)</td></tr>
+<tr class="memdesc:ab4a18a1d48d935fe2f226fe6538a8814"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the system temperature T  <a href="#ab4a18a1d48d935fe2f226fe6538a8814">More...</a><br/></td></tr>
 <tr class="separator:ab4a18a1d48d935fe2f226fe6538a8814"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af4e0aac1a11a4901db957b979c43b9ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4e0aac1a11a4901db957b979c43b9ce"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>getClusterEnergy</b> () const </td></tr>
@@ -136,14 +145,14 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>getOccupation</b> (
 <tr class="memitem:acdc052b754ed41227910a2e963346f55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdc052b754ed41227910a2e963346f55"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>getMagnetization</b> ()</td></tr>
 <tr class="separator:acdc052b754ed41227910a2e963346f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2761a143fc6a1cf385b91ad95453409a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2761a143fc6a1cf385b91ad95453409a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>init</b> ()</td></tr>
+<tr class="memitem:a2761a143fc6a1cf385b91ad95453409a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a">init</a> ()</td></tr>
+<tr class="memdesc:a2761a143fc6a1cf385b91ad95453409a"><td class="mdescLeft">&#160;</td><td class="mdescRight">prepares the <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> instance for the iterative diagonalization.  <a href="#a2761a143fc6a1cf385b91ad95453409a">More...</a><br/></td></tr>
 <tr class="separator:a2761a143fc6a1cf385b91ad95453409a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a360c9dc565beed2c2e741eceb7696036"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a360c9dc565beed2c2e741eceb7696036"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setupInitialState</b> ()</td></tr>
+<tr class="memitem:a360c9dc565beed2c2e741eceb7696036"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036">setupInitialState</a> ()</td></tr>
+<tr class="memdesc:a360c9dc565beed2c2e741eceb7696036"><td class="mdescLeft">&#160;</td><td class="mdescRight">initializes the impurity Hamiltonian \(H_0\).  <a href="#a360c9dc565beed2c2e741eceb7696036">More...</a><br/></td></tr>
 <tr class="separator:a360c9dc565beed2c2e741eceb7696036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61869162fe17cdf5cf34857b9abd132e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61869162fe17cdf5cf34857b9abd132e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setupHamiltonian</b> (int iteration)</td></tr>
+<tr class="memitem:a61869162fe17cdf5cf34857b9abd132e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e">setupHamiltonian</a> (int iteration)</td></tr>
+<tr class="memdesc:a61869162fe17cdf5cf34857b9abd132e"><td class="mdescLeft">&#160;</td><td class="mdescRight">iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for the corresponding <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a>.  <a href="#a61869162fe17cdf5cf34857b9abd132e">More...</a><br/></td></tr>
 <tr class="separator:a61869162fe17cdf5cf34857b9abd132e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a430ab28bf443456a5f61e488305eb308"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a430ab28bf443456a5f61e488305eb308"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>truncateStates</b> (int iteration)</td></tr>
@@ -305,6 +314,351 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>dQ</b> [4]</td></tr>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>dSz</b> [4]</td></tr>
 <tr class="separator:a2b265d892a44603ee796392f9405cc7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Density matrix implementation of the numerical renormalization group. </p>
+<h1>The Numerical Renormalization Group </h1>
+<p>The Numerical Renormalization Group (<a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a>) is one of the standard tools to study correlation effects in quantum impurity models. Here a small interacting subsystem with a small number of degrees of freedom (the impurity) is coupled to a bath of fermions. No restriction exists as to the structure of the impurity subsystem. The bath however must consist of non-interacting fermions.</p>
+<h3>Logarithmic discretization</h3>
+<p>At the heart of the <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> lies a logarithmic discretization of the continous conduction electron band. The continuum density of states \(\rho(\epsilon)\) is approximated by a discrete set of delta poles. By introducing a discretisation parameter \(\Lambda\) Wilson divided the normalised energy range \([-1,1]\) into \(2n\) intervals where the \(n\)th interval (for positive \(\epsilon\)) extends from \(\Lambda^{-(n+1)}\) to \(\Lambda^n\). The logarithmic discretisation separates the electron energies into different orders of magnitude where energies close to the Fermi level \(k_B T \ll D\) with \(D\) the bandwidth, which determine the low temperature properties, are well sampled.</p>
+<h3>Mapping onto a chain</h3>
+<p>In order to solve the discretized Hamiltonian iteratively one introduces a set of operators \(f_{n\sigma}\) with \(n&gt;0\) in such a way that they exhibit only nearest neighbour coupling. The Hamiltonian assumes the structure of a hopping Hamiltonian on a semi-infinite chain, which is often referred to as the <em>Wilson chain</em>.</p>
+<h3>Iterative diagonalization</h3>
+<p>The transformations performed so far have rendered a form of the Hamiltonian which is amendable to an iterative diagonalisation procedure. Now one defines a sequence of Hamiltonians \(H_N\) with \(N \geq 0\). The full discrete Hamiltonian is recovered in the limit \(N\to\infty\) as</p>
+<p>\( \begin{equation} H = \lim_{N\to\infty} \frac{1}{2} (1+\Lambda^{-1}) D \Lambda^{-(N-1)/2}H_N \end{equation} \)</p>
+<p>Two successive Hamiltonians in the series are connected by the recursion relation</p>
+<p>\( \begin{equation} H_{N+1} = \Lambda^{1/2} H_N + t_N ( f^\dagger_{N \sigma} f_{N+1\sigma} + f^\dagger _{N+1\sigma} f_{N\sigma} ) \end{equation} \)</p>
+<p>with the initial Hamiltonian in the series containing the impurity itself given by</p>
+<p>\( \begin{equation} H_0 = \Lambda^{-\frac{1}{2}} \left[ \tilde{\delta_d} c^\dagger_{d \sigma} c_{d \sigma} + \tilde{\Gamma}^{1/2} ( f^\dagger_{0 \sigma} c_{d\sigma} + \text{h.c.} ) + \tilde{U} ( c_{d \sigma}^\dagger c_{d \sigma} - 1)^2\right] \end{equation} \)</p>
+<p>In this form the single impurity Anderson model can be efficiently solved on a computer by taking advantage of the renormalisation group character of the above description. One starts with a diagonalisation of \(H_0\) which can be easily accomplished numerically. Assuming that we have diagonalised a Wilson chain of length \(m\) and that the eigenstates are given by \(|\mathbf r;m\rangle\) we construct a product basis for the Wilson chain of length \(m+1\) by</p>
+<p>\( \begin{equation} |(\mathbf r,\alpha_{m+1});m+1 \rangle = |\mathbf r; m \rangle \otimes |\alpha_{m+1}\rangle \end{equation} \)</p>
+<p>where \(|\alpha_{m+1}\rangle\) are the eigenstates of the decoupled site \(|\alpha_{m+1}\rangle=\{ |\rangle,|\uparrow\rangle,|\downarrow\rangle,| \uparrow \downarrow \rangle \}\). The matrix elements of the Hamiltonian for the Wilson chain of length \(m+1\) for this product basis are given by</p>
+<p>\( \begin{align} \langle(\mathbf r&#39;,\alpha&#39;_{m+1}); m+1|&amp;H_{m+1} |(\mathbf r,\alpha_{m+1}); m+1\rangle = \Lambda^{1/2} E_{\mathbf r,m} \delta_{\mathbf r \mathbf r&#39;} \delta_{\alpha \alpha&#39;} \nonumber \\ &amp;+\left( \langle \mathbf r&#39;; m |f^\dagger_{m\sigma} |\mathbf r;m \rangle \langle \alpha&#39; | f_{m+1\alpha} |\alpha \rangle + \langle \mathbf r&#39;; m | f_{m\sigma} |\mathbf r;m \rangle \langle\alpha&#39;| f^\dagger_{m+1\alpha} |\alpha\rangle\right) \end{align} \)</p>
+<p>The eigenvalue problem for the chain of length \(m+1\) can therefore be solved numerically using only a knowledge of the eigenspectrum of the chain of length \(m\) and the matrix elements of the operators \(f_{m\sigma}^\dagger\). Diagonalising the Hamiltonian \(H_{m+1}\), set up in the above product basis, can be described by a unitary transformation</p>
+<p>\( \begin{equation} |\mathbf r&#39;; m+1 \rangle = \sum_{\alpha_{m+1}, \mathbf r} U^{\alpha_{m+1}}_{\mathbf r&#39;, \mathbf r} |\mathbf r;m\rangle \otimes |\alpha_{m+1}\rangle \end{equation} \)</p>
+<p>where \(|\mathbf r&#39;; m+1 \rangle\) denotes the new eigenbasis of the Hamiltonian \(H_{m+1}\).</p>
+<div class="image">
+<img src="truncation.png" alt="truncation.png"/>
+<div class="caption">
+Illustration of the truncation procedure. The</div></div>
+<p> iterative diagonalisation splits each energy level into 4 levels upon the addition of another chain element. In this schematic picture however each energy level is split into only two levels in order not to make the illustration to cluttered. Due to the exponential decrease in the couplings it is save to truncate the high energy states without altering the spectrum of the low energy states. The truncated states are marked red."</p>
+<h2>References </h2>
+<ul>
+<li><a href="http://journals.aps.org/rmp/abstract/10.1103/RevModPhys.80.395">NRG review article by R. Bulla et al.</a></li>
+<li><a href="http://journals.aps.org/prb/abstract/10.1103/PhysRevB.21.1003">Renormalization-group approach to the Anderson model by H. R. Krishna-murthy, J. W. Wilkins, and K. G. Wilson</a> </li>
+</ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a4f3ab075bae106cc9d769b909bcd3b23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">nrg::NRG::NRG </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classnrg_1_1_chain_provider.html">ChainProvider</a> &amp;&#160;</td>
+          <td class="paramname"><em>chainProvider</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classnrg_1_1_broadener.html">Broadener</a> &amp;&#160;</td>
+          <td class="paramname"><em>broadener</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>constructs an <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> algorithm instance The Wilson chain is provided by an implementation of the <a class="el" href="classnrg_1_1_chain_provider.html">ChainProvider</a> interface. The <a class="el" href="classnrg_1_1_broadener.html">Broadener</a> is used after diagonalization of the chain and calculation of the density matrix to broaden the representation of various correlation functions as a discrete set of delta peaks into continous functions. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">chainProvider</td><td>implementation of the <a class="el" href="classnrg_1_1_chain_provider.html">ChainProvider</a> interface; supplies the Wilson chain. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">broadener</td><td>implementation of the <a class="el" href="classnrg_1_1_broadener.html">Broadener</a> interface; broadens the discrete set of delta peaks of the correlation functions into continous functions. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a8d553389916019021754b3a46f228dd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::configure </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a> &amp;&#160;</td>
+          <td class="paramname"><em>configuration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>configures the <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> instance with information in the configuration object. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">configuration</td><td>a configuration object which can be queried for various numerical and physical parameters concerning the impurity problem. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad0b862f7d9fe2f96b61f8f52daf67924"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double nrg::NRG::getEpsF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>retrieves the on-site impurity energy \(\epsilon_f\) </p>
+<dl class="section return"><dt>Returns</dt><dd>epsF on-site energy \(\epsilon_f\) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1d2da4871033be406050c5af5d7cd2dd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double nrg::NRG::getTemperature </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>retrieves the system temperature T </p>
+<dl class="section return"><dt>Returns</dt><dd>system temperature T </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae076986d428d7d680c467a646dfb820a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double nrg::NRG::getU </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>retrieves the strength of the on-site impurity interaction U </p>
+<dl class="section return"><dt>Returns</dt><dd>on-site impurity interaction U </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2761a143fc6a1cf385b91ad95453409a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>prepares the <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> instance for the iterative diagonalization. </p>
+<p>The function performs the following steps: </p>
+<h3>Initialisation</h3>
+<ul>
+<li>If the max. iterations have not been set, chooses them automatically based on the system temperature T.</li>
+<li>Checks whether enough <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration will be performed for the given temperature T.</li>
+<li>Calls the <a class="el" href="classnrg_1_1_chain_provider.html">ChainProvider</a> to prepare a chain of the appropriate length,</li>
+<li>Sets the temperature T in the broadeners and initializes them.</li>
+<li>Calls <a class="el" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . ">setupInitialState()</a> to initialize the impurity Hamiltonian \(H_0\). </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a4c8461747f2e58ace9b14e6966bb6800"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::setEpsF </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>epsF</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sets the on-site impurity energy \(\epsilon_f\) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">epsF</td><td>on-site energy \(\epsilon_f\) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ab4a18a1d48d935fe2f226fe6538a8814"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::setTemperature </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>T</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sets the system temperature T </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">T</td><td>system temperature T </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a49aa5d54ee31cd893c461bcd620a8e0d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::setU </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>U</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sets the strength of the on-site impurity interaction U </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">U</td><td>on-site impurity interaction U </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a61869162fe17cdf5cf34857b9abd132e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::setupHamiltonian </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for the corresponding <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a>. </p>
+<p>For a given <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> (HSS) in iteration N the function looks up the appropriate HSSs (up to 4) of iteration N-1 and uses the chain matrix elements to construct the Hamiltonian for the HSS in iteration N. Then the Hamiltonian is diagonalized using a call to Lapack's <a href="http://www.netlib.org/lapack/explore-3.1.1-html/dsyev.f.html">dsyev</a> Lapack replaces the Hamiltonian m_H in the HSS by the unitary transformation that diagonalized it and places the eigenvalues (energies) into the HSS object as well.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a360c9dc565beed2c2e741eceb7696036"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::setupInitialState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>initializes the impurity Hamiltonian \(H_0\). </p>
+<p>This function creates the first 4 <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> instances for the chain consisting only of the impurity ( \( \{ |\rangle,|\uparrow\rangle,|\downarrow\rangle,| \uparrow \downarrow \rangle \}\) ). It determines the eigenenergies and both the local impurity and the chain matrix elements. </p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classnrg_1_1_n_r_g_a360c9dc565beed2c2e741eceb7696036_icgraph.png" border="0" usemap="#classnrg_1_1_n_r_g_a360c9dc565beed2c2e741eceb7696036_icgraph" alt=""/></div>
+<map name="classnrg_1_1_n_r_g_a360c9dc565beed2c2e741eceb7696036_icgraph" id="classnrg_1_1_n_r_g_a360c9dc565beed2c2e741eceb7696036_icgraph">
+<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="267,5,381,35"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/chris/Documents/Development/Release/nanostructures/nrg/<a class="el" href="nrg_8h_source.html">nrg.h</a></li>
 <li>/Users/chris/Documents/Development/Release/nanostructures/nrg/nrg.cpp</li>
@@ -313,7 +667,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>dSz</b> [4]</td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 30 2014 15:13:15 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 30 2014 23:34:05 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

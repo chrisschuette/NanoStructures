@@ -66,147 +66,236 @@
 <div class="title">nrg.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef NRG_H</span></div>
+<a href="nrg_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef NRG_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define NRG_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../config/configuration.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;chainprovider.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;hilbertspacetable.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;broadener.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">namespace </span>nrg {</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classnrg_1_1_n_r_g.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classnrg_1_1_n_r_g.html">NRG</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">enum</span> STATES {KEPT, DISCARDED, BOTH};</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classnrg_1_1_n_r_g.html">NRG</a>(<a class="code" href="classnrg_1_1_chain_provider.html">ChainProvider</a>&amp; chainProvider, <a class="code" href="classnrg_1_1_broadener.html">Broadener</a>&amp; broadener);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> configure(<a class="code" href="classconfig_1_1_configuration.html">config::Configuration</a>&amp; configuration);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// setters and getters -- physical parameters</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">double</span> getU()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_U; }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> setU(<span class="keywordtype">double</span> U) { m_U = U; }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">double</span> getEpsF()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_epsF; }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> setEpsF(<span class="keywordtype">double</span> epsF) { m_epsF = epsF; }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">double</span> getTemperature()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_temperature; }</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> setTemperature( <span class="keywordtype">double</span> T ) { m_temperature = T; }</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">//setters and getters -- numerical parameters</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">double</span> getClusterEnergy()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_clusterEnergy; }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> setClusterEnergy(<span class="keywordtype">double</span> clusterEnergy) { m_clusterEnergy = clusterEnergy; }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">double</span> getEnergyCutOff()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> m_energyCutOff; }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> setEnergyCutOff(<span class="keywordtype">double</span> energyCutOff) { m_energyCutOff = energyCutOff; }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">int</span> getMaxHilbertSpaceDimension() { <span class="keywordflow">return</span> m_maxHSdimension; }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> setMaxHilbertSpaceDimension(<span class="keywordtype">int</span> maxHSdimension) { m_maxHSdimension = maxHSdimension; }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> getMaxIterations() { <span class="keywordflow">return</span> m_maxIterations; }</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> setMaxIterations(<span class="keywordtype">int</span> maxIterations) { m_maxIterations = maxIterations; }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">double</span> getOccupationUp() { <span class="keywordflow">return</span> m_n_Up; }</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">double</span> getOccupationDown() { <span class="keywordflow">return</span> m_n_Down; }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">double</span> getOccupation() { <span class="keywordflow">return</span> m_n_Up + m_n_Down; }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">double</span> getMagnetization() { <span class="keywordflow">return</span> m_n_Up - m_n_Down; }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// nrg</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> init();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// - determine m_maxIterations from m_temperature (if necessary)</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// - call build chain</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// - call setupInitialState();</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span> setupInitialState();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> setupHamiltonian(<span class="keywordtype">int</span> iteration); <span class="comment">// iteration &gt;= 0</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span> truncateStates(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> propagateChainOperatorElementsUp(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> propagateChainOperatorElementsDown(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> propagateLocalMatrixElementUp(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> propagateLocalMatrixElementDown(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> propagateLocalMatrixElementUp2(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> propagateLocalMatrixElementDown2(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> createPolesG_Up(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> createPolesG_Down(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> createPolesF_Up(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> createPolesF_Down(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> solve(<span class="keywordtype">bool</span> silent = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> solve_symmetric_SZ(<span class="keywordtype">bool</span> silent = <span class="keyword">false</span>);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> builDM();</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="comment">// show parameters</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> showInfo();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="comment">// clean-up code</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> deleteChainOperatorElements(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span> deleteTransformationMatrices(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> deleteDensityMatrices(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> deleteImpurityMatrixElements(<span class="keywordtype">int</span> iteration);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    ~<a class="code" href="classnrg_1_1_n_r_g.html">NRG</a>();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> getSelfEnergy(<a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; SUp, <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; SDown) { SUp = m_F_S_Up; SDown = m_F_S_Down; }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> getSelfEnergy(<a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; S) { S = m_F_S_Up; }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span> getGreensFunction(<a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; GUp, <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; GDown) { GUp = m_F_G_Up; GDown = m_F_G_Down; }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> getGreensFunction(<a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; G) { G = m_F_G_Up; }</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> getFFunction(<a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; FUp, <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; FDown) { FUp = m_F_F_Up; FDown = m_F_F_Down; }</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> getFFunction(<a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; F) { F = m_F_F_Up; }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="classnrg_1_1_chain_provider.html">ChainProvider</a>&amp; m_chainProvider;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="classnrg_1_1_broadener.html">Broadener</a>&amp; m_broadener;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="classnrg_1_1_broadener.html">Broadener</a>* m_G_Up;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classnrg_1_1_broadener.html">Broadener</a>* m_G_Down;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classnrg_1_1_broadener.html">Broadener</a>* m_F_Up;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="classnrg_1_1_broadener.html">Broadener</a>* m_F_Down;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a> m_F_S_Up;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a> m_F_S_Down;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a> m_F_G_Up;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a> m_F_G_Down;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a> m_F_F_Up;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a> m_F_F_Down;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">double</span> m_n_Up;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">double</span> m_n_Down;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">double</span> m_epsF;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">double</span> m_U;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">double</span> m_temperature;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">int</span> m_maxIterations;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::vector&lt;double&gt; m_energies;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <a class="code" href="classnrg_1_1_hilbert_space_table.html">HilbertSpaceTable</a> m_hilbertSpaces;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">// numerical parameters</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">double</span> m_clusterEnergy;</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">double</span> m_energyCutOff;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">int</span> m_maxHSdimension;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">int</span> m_nFirstTruncated;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="comment">// helper fields</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">int</span> signLME[4];</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">int</span> dQ[4];</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">int</span> dSz[4];</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;}</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif // NRG_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * Copyright (c) 2014 Christoph Schuette.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> *</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * The license and distribution terms for this file may be</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * found in the file LICENSE in this distribution</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;../config/configuration.h&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;chainprovider.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="hilbertspacetable_8h.html">hilbertspacetable.h</a>&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#include &quot;broadener.h&quot;</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">namespace </span>nrg {</div>
+<div class="line"><a name="l00138"></a><span class="lineno"><a class="line" href="classnrg_1_1_n_r_g.html">  138</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classnrg_1_1_n_r_g.html">NRG</a> {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keyword">enum</span> STATES {</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            KEPT, DISCARDED, BOTH</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        };</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <a class="code" href="classnrg_1_1_n_r_g.html#a4f3ab075bae106cc9d769b909bcd3b23">NRG</a>(<a class="code" href="classnrg_1_1_chain_provider.html">ChainProvider</a>&amp; chainProvider, <a class="code" href="classnrg_1_1_broadener.html">Broadener</a>&amp; broadener);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;  </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="classnrg_1_1_n_r_g.html#a374be5926ec514d39e3027a9369b9662">~NRG</a>();</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnrg_1_1_n_r_g.html#a8d553389916019021754b3a46f228dd5">configure</a>(<a class="code" href="classconfig_1_1_configuration.html">config::Configuration</a>&amp; configuration);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="comment">// setters and getters -- physical parameters</span></div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classnrg_1_1_n_r_g.html#ae076986d428d7d680c467a646dfb820a">  183</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classnrg_1_1_n_r_g.html#ae076986d428d7d680c467a646dfb820a">getU</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keywordflow">return</span> m_U;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        }</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div>
+<div class="line"><a name="l00191"></a><span class="lineno"><a class="line" href="classnrg_1_1_n_r_g.html#a49aa5d54ee31cd893c461bcd620a8e0d">  191</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnrg_1_1_n_r_g.html#a49aa5d54ee31cd893c461bcd620a8e0d">setU</a>(<span class="keywordtype">double</span> U) {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            m_U = U;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        }</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno"><a class="line" href="classnrg_1_1_n_r_g.html#ad0b862f7d9fe2f96b61f8f52daf67924">  199</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classnrg_1_1_n_r_g.html#ad0b862f7d9fe2f96b61f8f52daf67924">getEpsF</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="keywordflow">return</span> m_epsF;</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        }</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno"><a class="line" href="classnrg_1_1_n_r_g.html#a4c8461747f2e58ace9b14e6966bb6800">  207</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnrg_1_1_n_r_g.html#a4c8461747f2e58ace9b14e6966bb6800">setEpsF</a>(<span class="keywordtype">double</span> epsF) {</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            m_epsF = epsF;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div>
+<div class="line"><a name="l00215"></a><span class="lineno"><a class="line" href="classnrg_1_1_n_r_g.html#a1d2da4871033be406050c5af5d7cd2dd">  215</a></span>&#160;        <span class="keywordtype">double</span> <a class="code" href="classnrg_1_1_n_r_g.html#a1d2da4871033be406050c5af5d7cd2dd">getTemperature</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <span class="keywordflow">return</span> m_temperature;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        }</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="classnrg_1_1_n_r_g.html#ab4a18a1d48d935fe2f226fe6538a8814">  223</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnrg_1_1_n_r_g.html#ab4a18a1d48d935fe2f226fe6538a8814">setTemperature</a>(<span class="keywordtype">double</span> T) {</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            m_temperature = T;</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        <span class="comment">//setters and getters -- numerical parameters</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <span class="keywordtype">double</span> getClusterEnergy()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="keywordflow">return</span> m_clusterEnergy;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        }</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        <span class="keywordtype">void</span> setClusterEnergy(<span class="keywordtype">double</span> clusterEnergy) {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            m_clusterEnergy = clusterEnergy;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        }</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordtype">double</span> getEnergyCutOff()<span class="keyword"> const </span>{</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="keywordflow">return</span> m_energyCutOff;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <span class="keywordtype">void</span> setEnergyCutOff(<span class="keywordtype">double</span> energyCutOff) {</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            m_energyCutOff = energyCutOff;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        <span class="keywordtype">int</span> getMaxHilbertSpaceDimension() {</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            <span class="keywordflow">return</span> m_maxHSdimension;</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        }</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordtype">void</span> setMaxHilbertSpaceDimension(<span class="keywordtype">int</span> maxHSdimension) {</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            m_maxHSdimension = maxHSdimension;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        }</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="keywordtype">int</span> getMaxIterations() {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="keywordflow">return</span> m_maxIterations;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        }</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        <span class="keywordtype">void</span> setMaxIterations(<span class="keywordtype">int</span> maxIterations) {</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            m_maxIterations = maxIterations;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">double</span> getOccupationUp() {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="keywordflow">return</span> m_n_Up;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">double</span> getOccupationDown() {</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            <span class="keywordflow">return</span> m_n_Down;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;        }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">double</span> getOccupation() {</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            <span class="keywordflow">return</span> m_n_Up + m_n_Down;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        }</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keyword">inline</span> <span class="keywordtype">double</span> getMagnetization() {</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            <span class="keywordflow">return</span> m_n_Up - m_n_Down;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        }</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        <span class="comment">// nrg</span></div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;<span class="comment"></span>        <span class="keywordtype">void</span> <a class="code" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a">init</a>();</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036">setupInitialState</a>();</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;        </div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e">setupHamiltonian</a>(<span class="keywordtype">int</span> iteration); <span class="comment">// iteration &gt;= 0</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordtype">void</span> truncateStates(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;        <span class="keywordtype">void</span> propagateChainOperatorElementsUp(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        <span class="keywordtype">void</span> propagateChainOperatorElementsDown(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        <span class="keywordtype">void</span> propagateLocalMatrixElementUp(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="keywordtype">void</span> propagateLocalMatrixElementDown(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        <span class="keywordtype">void</span> propagateLocalMatrixElementUp2(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <span class="keywordtype">void</span> propagateLocalMatrixElementDown2(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordtype">void</span> createPolesG_Up(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;        <span class="keywordtype">void</span> createPolesG_Down(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="keywordtype">void</span> createPolesF_Up(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordtype">void</span> createPolesF_Down(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordtype">void</span> solve(<span class="keywordtype">bool</span> silent = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keywordtype">void</span> solve_symmetric_SZ(<span class="keywordtype">bool</span> silent = <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordtype">void</span> builDM();</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        <span class="comment">// show parameters</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keywordtype">void</span> showInfo();</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="comment">// clean-up code</span></div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        <span class="keywordtype">void</span> deleteChainOperatorElements(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;        <span class="keywordtype">void</span> deleteTransformationMatrices(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordtype">void</span> deleteDensityMatrices(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        <span class="keywordtype">void</span> deleteImpurityMatrixElements(<span class="keywordtype">int</span> iteration);</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keywordtype">void</span> getSelfEnergy(<a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; SUp, <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; SDown) {</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            SUp = m_F_S_Up;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;            SDown = m_F_S_Down;</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;        }</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="keywordtype">void</span> getSelfEnergy(<a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; S) {</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;            S = m_F_S_Up;</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        }</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordtype">void</span> getGreensFunction(<a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; GUp, <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; GDown) {</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;            GUp = m_F_G_Up;</div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;            GDown = m_F_G_Down;</div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        }</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;</div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordtype">void</span> getGreensFunction(<a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; G) {</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;            G = m_F_G_Up;</div>
+<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;        }</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;        <span class="keywordtype">void</span> getFFunction(<a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; FUp, <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; FDown) {</div>
+<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;            FUp = m_F_F_Up;</div>
+<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;            FDown = m_F_F_Down;</div>
+<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;        }</div>
+<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;</div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;        <span class="keywordtype">void</span> getFFunction(<a class="code" href="classmath_1_1_c_function.html">math::CFunction</a>&amp; F) {</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;            F = m_F_F_Up;</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;        }</div>
+<div class="line"><a name="l00373"></a><span class="lineno">  373</span>&#160;</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00375"></a><span class="lineno">  375</span>&#160;        ChainProvider&amp; m_chainProvider;</div>
+<div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        Broadener&amp; m_broadener;</div>
+<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        Broadener* m_G_Up;</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;        Broadener* m_G_Down;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        Broadener* m_F_Up;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;        Broadener* m_F_Down;</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;        <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a> m_F_S_Up;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;        <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a> m_F_S_Down;</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;        <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a> m_F_G_Up;</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;        <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a> m_F_G_Down;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;        <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a> m_F_F_Up;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;        <a class="code" href="classmath_1_1_c_function.html">math::CFunction</a> m_F_F_Down;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <span class="keywordtype">double</span> m_n_Up;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keywordtype">double</span> m_n_Down;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        <span class="keywordtype">double</span> m_epsF;</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;        <span class="keywordtype">double</span> m_U;</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;        <span class="keywordtype">double</span> m_temperature;</div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;        <span class="keywordtype">int</span> m_maxIterations;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;        std::vector&lt;double&gt; m_energies;</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        HilbertSpaceTable m_hilbertSpaces;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="comment">// numerical parameters</span></div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        <span class="keywordtype">double</span> m_clusterEnergy;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <span class="keywordtype">double</span> m_energyCutOff;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;        <span class="keywordtype">int</span> m_maxHSdimension;</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;        <span class="keywordtype">int</span> m_nFirstTruncated;</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;        <span class="comment">// helper fields</span></div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="keywordtype">int</span> signLME[4];</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        <span class="keywordtype">int</span> dQ[4];</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;        <span class="keywordtype">int</span> dSz[4];</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;    };</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;}</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;<span class="preprocessor">#endif // NRG_H</span></div>
+<div class="ttc" id="classnrg_1_1_n_r_g_html_ab4a18a1d48d935fe2f226fe6538a8814"><div class="ttname"><a href="classnrg_1_1_n_r_g.html#ab4a18a1d48d935fe2f226fe6538a8814">nrg::NRG::setTemperature</a></div><div class="ttdeci">void setTemperature(double T)</div><div class="ttdoc">sets the system temperature T </div><div class="ttdef"><b>Definition:</b> nrg.h:223</div></div>
 <div class="ttc" id="classnrg_1_1_chain_provider_html"><div class="ttname"><a href="classnrg_1_1_chain_provider.html">nrg::ChainProvider</a></div><div class="ttdef"><b>Definition:</b> chainprovider.h:19</div></div>
-<div class="ttc" id="classnrg_1_1_hilbert_space_table_html"><div class="ttname"><a href="classnrg_1_1_hilbert_space_table.html">nrg::HilbertSpaceTable</a></div><div class="ttdef"><b>Definition:</b> hilbertspacetable.h:13</div></div>
+<div class="ttc" id="classnrg_1_1_n_r_g_html_a8d553389916019021754b3a46f228dd5"><div class="ttname"><a href="classnrg_1_1_n_r_g.html#a8d553389916019021754b3a46f228dd5">nrg::NRG::configure</a></div><div class="ttdeci">void configure(config::Configuration &amp;configuration)</div><div class="ttdoc">configures the NRG instance with information in the configuration object. </div><div class="ttdef"><b>Definition:</b> nrg.cpp:46</div></div>
+<div class="ttc" id="classnrg_1_1_n_r_g_html_a49aa5d54ee31cd893c461bcd620a8e0d"><div class="ttname"><a href="classnrg_1_1_n_r_g.html#a49aa5d54ee31cd893c461bcd620a8e0d">nrg::NRG::setU</a></div><div class="ttdeci">void setU(double U)</div><div class="ttdoc">sets the strength of the on-site impurity interaction U </div><div class="ttdef"><b>Definition:</b> nrg.h:191</div></div>
+<div class="ttc" id="classnrg_1_1_n_r_g_html_ae076986d428d7d680c467a646dfb820a"><div class="ttname"><a href="classnrg_1_1_n_r_g.html#ae076986d428d7d680c467a646dfb820a">nrg::NRG::getU</a></div><div class="ttdeci">double getU() const </div><div class="ttdoc">retrieves the strength of the on-site impurity interaction U </div><div class="ttdef"><b>Definition:</b> nrg.h:183</div></div>
+<div class="ttc" id="classnrg_1_1_n_r_g_html_a1d2da4871033be406050c5af5d7cd2dd"><div class="ttname"><a href="classnrg_1_1_n_r_g.html#a1d2da4871033be406050c5af5d7cd2dd">nrg::NRG::getTemperature</a></div><div class="ttdeci">double getTemperature() const </div><div class="ttdoc">retrieves the system temperature T </div><div class="ttdef"><b>Definition:</b> nrg.h:215</div></div>
 <div class="ttc" id="classconfig_1_1_configuration_html"><div class="ttname"><a href="classconfig_1_1_configuration.html">config::Configuration</a></div><div class="ttdef"><b>Definition:</b> configuration.h:22</div></div>
-<div class="ttc" id="classnrg_1_1_n_r_g_html"><div class="ttname"><a href="classnrg_1_1_n_r_g.html">nrg::NRG</a></div><div class="ttdef"><b>Definition:</b> nrg.h:10</div></div>
+<div class="ttc" id="classnrg_1_1_n_r_g_html_a360c9dc565beed2c2e741eceb7696036"><div class="ttname"><a href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036">nrg::NRG::setupInitialState</a></div><div class="ttdeci">void setupInitialState()</div><div class="ttdoc">initializes the impurity Hamiltonian . </div><div class="ttdef"><b>Definition:</b> nrg.cpp:107</div></div>
+<div class="ttc" id="classnrg_1_1_n_r_g_html_a61869162fe17cdf5cf34857b9abd132e"><div class="ttname"><a href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e">nrg::NRG::setupHamiltonian</a></div><div class="ttdeci">void setupHamiltonian(int iteration)</div><div class="ttdoc">iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for...</div><div class="ttdef"><b>Definition:</b> nrg.cpp:178</div></div>
+<div class="ttc" id="classnrg_1_1_n_r_g_html_a2761a143fc6a1cf385b91ad95453409a"><div class="ttname"><a href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a">nrg::NRG::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">prepares the NRG instance for the iterative diagonalization. </div><div class="ttdef"><b>Definition:</b> nrg.cpp:67</div></div>
+<div class="ttc" id="hilbertspacetable_8h_html"><div class="ttname"><a href="hilbertspacetable_8h.html">hilbertspacetable.h</a></div><div class="ttdoc">Hilbert subspace table for charge quantum number Q and spin S. </div></div>
+<div class="ttc" id="classnrg_1_1_n_r_g_html_ad0b862f7d9fe2f96b61f8f52daf67924"><div class="ttname"><a href="classnrg_1_1_n_r_g.html#ad0b862f7d9fe2f96b61f8f52daf67924">nrg::NRG::getEpsF</a></div><div class="ttdeci">double getEpsF() const </div><div class="ttdoc">retrieves the on-site impurity energy  </div><div class="ttdef"><b>Definition:</b> nrg.h:199</div></div>
+<div class="ttc" id="classnrg_1_1_n_r_g_html_a4f3ab075bae106cc9d769b909bcd3b23"><div class="ttname"><a href="classnrg_1_1_n_r_g.html#a4f3ab075bae106cc9d769b909bcd3b23">nrg::NRG::NRG</a></div><div class="ttdeci">NRG(ChainProvider &amp;chainProvider, Broadener &amp;broadener)</div><div class="ttdoc">constructs an NRG algorithm instance The Wilson chain is provided by an implementation of the ChainPr...</div><div class="ttdef"><b>Definition:</b> nrg.cpp:14</div></div>
+<div class="ttc" id="classnrg_1_1_n_r_g_html_a4c8461747f2e58ace9b14e6966bb6800"><div class="ttname"><a href="classnrg_1_1_n_r_g.html#a4c8461747f2e58ace9b14e6966bb6800">nrg::NRG::setEpsF</a></div><div class="ttdeci">void setEpsF(double epsF)</div><div class="ttdoc">sets the on-site impurity energy  </div><div class="ttdef"><b>Definition:</b> nrg.h:207</div></div>
+<div class="ttc" id="classnrg_1_1_n_r_g_html"><div class="ttname"><a href="classnrg_1_1_n_r_g.html">nrg::NRG</a></div><div class="ttdoc">Density matrix implementation of the numerical renormalization group. </div><div class="ttdef"><b>Definition:</b> nrg.h:138</div></div>
 <div class="ttc" id="classnrg_1_1_broadener_html"><div class="ttname"><a href="classnrg_1_1_broadener.html">nrg::Broadener</a></div><div class="ttdef"><b>Definition:</b> broadener.h:8</div></div>
+<div class="ttc" id="classnrg_1_1_n_r_g_html_a374be5926ec514d39e3027a9369b9662"><div class="ttname"><a href="classnrg_1_1_n_r_g.html#a374be5926ec514d39e3027a9369b9662">nrg::NRG::~NRG</a></div><div class="ttdeci">~NRG()</div><div class="ttdoc">destructs the NRG algorithm object and frees all previously allocated memory. </div><div class="ttdef"><b>Definition:</b> nrg.cpp:1862</div></div>
 <div class="ttc" id="classmath_1_1_c_function_html"><div class="ttname"><a href="classmath_1_1_c_function.html">math::CFunction</a></div><div class="ttdef"><b>Definition:</b> cfunction.h:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Apr 30 2014 15:13:15 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Apr 30 2014 23:34:05 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

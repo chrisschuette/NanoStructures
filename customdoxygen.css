@@ -7,13 +7,24 @@
 
 .backplane {
 	   border-radius: 20px;
-	   background: #F0F0F0;
+/*	   background: #F0F0F0; */
+	   background:url(img/bg.png);
+	   background-repeat:repeat;
 	   padding-left: 30px;
 	   padding-right: 30px;
 	   padding-top: 30px;
 	   padding-bottom: 30px;
 }
 
+td.entry {
+	 width: 300px;
+}
+
+@media(max-width:767px){
+	td.desc {
+		    display: none;
+		}
+}
 #titlearea {
 		border-bottom: 2px solid #CCC;
 
@@ -34,11 +45,13 @@
 }
 
 #projectname {
-	font-size: 20px;
+	font-size: 18px;
+	color: #333;
 }
 
 #projectbrief {
-	font-size: 20px;
+	font-size: 18px;
+	color: #333
 }
 
 #titlearea {
