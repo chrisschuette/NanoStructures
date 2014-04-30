@@ -7,4 +7,4 @@ NanoStructures is a Dynamical Mean Field Theory (DMFT) solver for layered, stron
 Documentation
 -------------
 
-The [documentation](http://http://chrisschuette.github.io/nanostructures/) can be found here http://chrisschuette.github.io/nanostructures.
+The [documentation](http://chrisschuette.github.io/nanostructures/) can be found here http://chrisschuette.github.io/nanostructures.
