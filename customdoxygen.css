@@ -14,8 +14,35 @@
 	   padding-bottom: 30px;
 }
 
+#titlearea {
+		border-bottom: 2px solid #CCC;
+
+}
+
+#top {
+	font-family: Raleway, sans-serif;
+	font-size: 16px;
+	border: 0;
+	border-bottom: 2px solid #CCC;
+}
+
+.title {
+}
+
 .h1 {
-	font-size: 30px;
+	font-family: Raleway, sans-serif;
+}
+
+#projectname {
+	font-size: 20px;
+}
+
+#projectbrief {
+	font-size: 20px;
+}
+
+#titlearea {
+	padding: 20px 0px;	
 }
 
 #MSearchBox {
