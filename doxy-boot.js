@@ -6,7 +6,7 @@ $( document ).ready(function() {
 	$('li > a[href="index.html"] > span').before("<i class='fa fa-cog'></i> ");
 	$('li > a[href="index.html"] > span').text("NanoStructures");
 	$('li > a[href="files.html"] > span').before("<i class='fa fa-files-o'></i> ");
-	$('li > a[href="pages.html"] > span').before("<i class='fa fa-book'></i> ");
+	$('li > a[href="pages.html"] > span').before("<i class='fa fa-bars'></i> ");
 	$('li > a[href="modules.html"] > span').before("<i class='fa fa-square'></i> ");
 	$('li > a[href="namespaces.html"] > span').before("<i class='fa fa-bars'></i> ");
 	$('li > a[href="annotated.html"] > span').before("<i class='fa fa-list-ul'></i> ");
