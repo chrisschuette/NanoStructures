@@ -5,6 +5,8 @@ $( document ).ready(function() {
 	
 	$('li > a[href="index.html"] > span').before("<i class='fa fa-cog'></i> ");
 	$('li > a[href="index.html"] > span').text("NanoStructures");
+	$('li > a[href="files.html"] > span').before("<i class='fa fa-files-o'></i> ");
+	$('li > a[href="pages.html"] > span').before("<i class='fa fa-book'></i> ");
 	$('li > a[href="modules.html"] > span').before("<i class='fa fa-square'></i> ");
 	$('li > a[href="namespaces.html"] > span').before("<i class='fa fa-bars'></i> ");
 	$('li > a[href="annotated.html"] > span').before("<i class='fa fa-list-ul'></i> ");
@@ -18,7 +20,6 @@ $( document ).ready(function() {
 	$('img[src="ftv2ns.png"]').replaceWith('<span class="label label-danger">N</span> ');
 	$('img[src="ftv2cl.png"]').replaceWith('<span class="label label-danger">C</span> ');
 	
-	$(".image > img").addClass("img-responsive");
 	$("ul.tablist").addClass("nav nav-pills nav-justified");
 	$("ul.tablist").css("margin-top", "0.5em");
 	$("ul.tablist").css("margin-bottom", "0.5em");

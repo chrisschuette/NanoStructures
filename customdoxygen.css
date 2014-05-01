@@ -27,7 +27,6 @@ td.entry {
 }
 #titlearea {
 		border-bottom: 2px solid #CCC;
-
 }
 
 #top {
@@ -71,6 +70,7 @@ ul.nav a:active {
 }
 
 ul.nav a:hover {
+       color: #FFF;
 	background: #90BEE4;
 }
 
@@ -242,5 +242,33 @@ span.vhdllogic {
 	color: #ff0000 
 }
 
+.ttc {
+     margin-top: 15px;
+     margin-bottom: 15px;
+}
+
+.ttc .ttdeci {
+     font-weight: bold;
+     border-bottom: 1px solid #D9EDF7;
+     padding-top: 5px;
+     padding-bottom: 5px;
+}
+
+.ttc .ttdoc {
+     border-top: 1px solid #D9EDF7;
+     border-left: 0px solid #D9EDF7;
+     margin-top: 1px;
+     margin-left: 0px;
+     padding-left: 25px;
+     padding-top: 7px;
+     padding-bottom: 7px;
+}
+
+.ttc .ttdef {
+     font-size: 11px;
+     border-top: 1px solid #D9EDF7;
+     padding-top: 5px;
+     padding-bottom: 5px;
+}
 
 /* @end */
