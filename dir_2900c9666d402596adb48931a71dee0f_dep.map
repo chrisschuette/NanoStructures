@@ -1,5 +1,8 @@
 <map id="/Users/chris/Documents/Development/Release/nanostructures/nano" name="/Users/chris/Documents/Development/Release/nanostructures/nano">
 <area shape="rect" id="node1" href="dir_2900c9666d402596adb48931a71dee0f.html" title="nano" alt="" coords="5,5,77,53"/>
-<area shape="rect" id="node2" href="dir_0fe9176594f6a288c02ec06b1591673d.html" title="nrg" alt="" coords="5,101,77,149"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000007_000008.html" title="1" alt="" coords="46,74,53,92"/>
+<area shape="rect" id="node2" href="dir_9f351d46ce3cc29445a41dc3a31e6919.html" title="config" alt="" coords="5,197,77,245"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000007_000001.html" title="3" alt="" coords="38,169,47,187"/>
+<area shape="rect" id="node3" href="dir_0fe9176594f6a288c02ec06b1591673d.html" title="nrg" alt="" coords="43,101,115,149"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000007_000008.html" title="1" alt="" coords="67,72,74,91"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000008_000001.html" title="4" alt="" coords="61,174,69,193"/>
 </map>

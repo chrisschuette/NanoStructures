@@ -1,4 +1,10 @@
 <map id="nrg::HilbertSubSpace::getLocalMatrixElementUp" name="nrg::HilbertSubSpace::getLocalMatrixElementUp">
-<area shape="rect" id="node2" href="$classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="276,14,487,45"/>
-<area shape="rect" id="node3" href="$classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="536,14,651,45"/>
+<area shape="rect" id="node2" href="$classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="280,5,491,35"/>
+<area shape="rect" id="node4" href="$classnrg_1_1_n_r_g.html#a67e6c976eb1c8466ca5278e1c5269fe9" title="deletes all impurity operator matrix elements for the indicated iteration. " alt="" coords="285,242,486,291"/>
+<area shape="rect" id="node7" href="$classnrg_1_1_n_r_g.html#a3a868ffea9b163edd3d067d63952d2ad" title="calculates the local impurity matrix elements or spin&#45; &#160;for a given iteration. " alt="" coords="280,59,490,109"/>
+<area shape="rect" id="node8" href="$classnrg_1_1_n_r_g.html#a6581be9331b44238dd2b4f164de76d3d" title="calculates delta peaks for the spin&#45; &#160;impurity correlator used in the self&#45;energy trick..." alt="" coords="276,133,495,163"/>
+<area shape="rect" id="node9" href="$classnrg_1_1_n_r_g.html#a3e17ab2a4393f21a6863b714e3dc0e85" title="calculates delta peaks for the spin&#45; &#160;impurity Green&#39;s function. " alt="" coords="275,187,496,218"/>
+<area shape="rect" id="node3" href="$classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="609,5,724,35"/>
+<area shape="rect" id="node5" href="$classnrg_1_1_n_r_g.html#af9d7e07864134a128a4a0628531ecdcf" title="Version of solve(bool silent) for a Wilson chain with Sz symmetry. " alt="" coords="545,167,788,198"/>
+<area shape="rect" id="node6" href="$classnrg_1_1_n_r_g.html#a54a2a7395b2f9a5b6884b8c44f969d13" title="solves the impurity problem. " alt="" coords="838,167,970,198"/>
 </map>

@@ -15,12 +15,25 @@
 <link rel='stylesheet' id='google_fonts-css'  href='http://fonts.googleapis.com/css?family=Megrim|Raleway|Open+Sans:400,400italic,700,700italic' type='text/css' media='all' />
 <!-- Font Awesome -->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<!-- MathJax.js --> 
+<!-- Single dollar signs as math-mode delimiters --> 
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
+MathJax.Hub.Config({
+  tex2jax: {
+inlineMath: [['$','$'], ['\\(','\\)']]
+},
+TeX: {
+Macros: {
+RR: "{\\bf  R}",
+vect: ["\\mathbf{#1}",1],
+ket: ["\\left| #1 \\right\\rangle",1],
+bra: ["\\left< #1 \\right|",1],
+avg: ["\\left\\langle #1 \\right\\rangle",1]
+}
+}
 });
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script> 
+<script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -74,23 +87,23 @@
 
 <p>This is the complete list of members for <a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>addSetting</b>(std::string path, std::string name, std::string value) (defined in <a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a>)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>editSetting</b>(std::string path, std::string name, double value) (defined in <a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a>)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>exists</b>(std::string path) (defined in <a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a>)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getBool</b>(std::string path) (defined in <a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a>)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getDouble</b>(std::string path) (defined in <a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a>)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getInstance</b>() (defined in <a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a>)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getInteger</b>(std::string path) (defined in <a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a>)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classconfig_1_1_configuration.html#abed5bed394080e6eeb24ed9399e29193">addSetting</a>(std::string path, std::string name, std::string value)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classconfig_1_1_configuration.html#a055ca75b6048b7b382b8cf17f67fed71">editSetting</a>(std::string path, std::string name, double value)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classconfig_1_1_configuration.html#af87c3782d6aaa16c1b3f71b9bbbb4b51">exists</a>(std::string path)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classconfig_1_1_configuration.html#a65fb99ebef567a8b91f7c241a521c0e2">getBool</a>(std::string path)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classconfig_1_1_configuration.html#a1af7b3466bc63633f516885c1ad9bd74">getDouble</a>(std::string path)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classconfig_1_1_configuration.html#a0316d771f04b626c20e77545d6adb414">getInstance</a>()</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classconfig_1_1_configuration.html#abd057000da3543a64788527074d512ed">getInteger</a>(std::string path)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>getName</b>() const  (defined in <a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a>)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getString</b>(std::string path) (defined in <a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a>)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>lookup</b>(const std::string path) const  (defined in <a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a>)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>readFile</b>(std::string configFile) (defined in <a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a>)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classconfig_1_1_configuration.html#abefbef146c8c3eed841572ae39f3b86e">getString</a>(std::string path)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classconfig_1_1_configuration.html#a53dc6ed33e15adf5110e99efb47d925a">lookup</a>(const std::string path) const </td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classconfig_1_1_configuration.html#a7161a346a59b3c3d5038956d3cd00329">readFile</a>(std::string configFile)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>std::auto_ptr&lt; Configuration &gt;</b> (defined in <a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a>)</td><td class="entry"><a class="el" href="classconfig_1_1_configuration.html">config::Configuration</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 1 2014 08:20:48 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 3 2014 09:39:46 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

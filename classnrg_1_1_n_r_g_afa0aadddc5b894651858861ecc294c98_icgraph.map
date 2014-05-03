@@ -1,0 +1,5 @@
+<map id="nrg::NRG::deleteChainOperatorElements" name="nrg::NRG::deleteChainOperatorElements">
+<area shape="rect" id="node2" href="$classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="302,57,525,87"/>
+<area shape="rect" id="node3" href="$classnrg_1_1_n_r_g.html#af9d7e07864134a128a4a0628531ecdcf" title="Version of solve(bool silent) for a Wilson chain with Sz symmetry. " alt="" coords="574,5,818,35"/>
+<area shape="rect" id="node4" href="$classnrg_1_1_n_r_g.html#a54a2a7395b2f9a5b6884b8c44f969d13" title="solves the impurity problem. " alt="" coords="867,58,999,89"/>
+</map>

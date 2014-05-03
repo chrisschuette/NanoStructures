@@ -15,12 +15,25 @@
 <link rel='stylesheet' id='google_fonts-css'  href='http://fonts.googleapis.com/css?family=Megrim|Raleway|Open+Sans:400,400italic,700,700italic' type='text/css' media='all' />
 <!-- Font Awesome -->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<!-- MathJax.js --> 
+<!-- Single dollar signs as math-mode delimiters --> 
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
+MathJax.Hub.Config({
+  tex2jax: {
+inlineMath: [['$','$'], ['\\(','\\)']]
+},
+TeX: {
+Macros: {
+RR: "{\\bf  R}",
+vect: ["\\mathbf{#1}",1],
+ket: ["\\left| #1 \\right\\rangle",1],
+bra: ["\\left< #1 \\right|",1],
+avg: ["\\left\\langle #1 \\right\\rangle",1]
+}
+}
 });
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script> 
+<script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -76,35 +89,40 @@
 <div class="title">config::Configuration Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A configuration object which is populated from a configuration file and allows to query and modify configuration values.  
+ <a href="classconfig_1_1_configuration.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="configuration_8h_source.html">configuration.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7161a346a59b3c3d5038956d3cd00329"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7161a346a59b3c3d5038956d3cd00329"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>readFile</b> (std::string configFile)</td></tr>
+<tr class="memitem:a7161a346a59b3c3d5038956d3cd00329"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconfig_1_1_configuration.html#a7161a346a59b3c3d5038956d3cd00329">readFile</a> (std::string configFile)</td></tr>
+<tr class="memdesc:a7161a346a59b3c3d5038956d3cd00329"><td class="mdescLeft">&#160;</td><td class="mdescRight">parses configuration file configFile and loads the data into object. The configuration file needs to written in the libconfig++ format, see <a href="">libconfig++</a>.  <a href="#a7161a346a59b3c3d5038956d3cd00329">More...</a><br/></td></tr>
 <tr class="separator:a7161a346a59b3c3d5038956d3cd00329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af87c3782d6aaa16c1b3f71b9bbbb4b51"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af87c3782d6aaa16c1b3f71b9bbbb4b51"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>exists</b> (std::string path)</td></tr>
+<tr class="memitem:af87c3782d6aaa16c1b3f71b9bbbb4b51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconfig_1_1_configuration.html#af87c3782d6aaa16c1b3f71b9bbbb4b51">exists</a> (std::string path)</td></tr>
+<tr class="memdesc:af87c3782d6aaa16c1b3f71b9bbbb4b51"><td class="mdescLeft">&#160;</td><td class="mdescRight">determines whether a given configuration value exists.  <a href="#af87c3782d6aaa16c1b3f71b9bbbb4b51">More...</a><br/></td></tr>
 <tr class="separator:af87c3782d6aaa16c1b3f71b9bbbb4b51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1af7b3466bc63633f516885c1ad9bd74"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1af7b3466bc63633f516885c1ad9bd74"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getDouble</b> (std::string path)</td></tr>
+<tr class="memitem:a1af7b3466bc63633f516885c1ad9bd74"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconfig_1_1_configuration.html#a1af7b3466bc63633f516885c1ad9bd74">getDouble</a> (std::string path)</td></tr>
+<tr class="memdesc:a1af7b3466bc63633f516885c1ad9bd74"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the configuration value found at a given configuration path.  <a href="#a1af7b3466bc63633f516885c1ad9bd74">More...</a><br/></td></tr>
 <tr class="separator:a1af7b3466bc63633f516885c1ad9bd74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65fb99ebef567a8b91f7c241a521c0e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65fb99ebef567a8b91f7c241a521c0e2"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>getBool</b> (std::string path)</td></tr>
+<tr class="memitem:a65fb99ebef567a8b91f7c241a521c0e2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconfig_1_1_configuration.html#a65fb99ebef567a8b91f7c241a521c0e2">getBool</a> (std::string path)</td></tr>
+<tr class="memdesc:a65fb99ebef567a8b91f7c241a521c0e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the configuration value found at a given configuration path.  <a href="#a65fb99ebef567a8b91f7c241a521c0e2">More...</a><br/></td></tr>
 <tr class="separator:a65fb99ebef567a8b91f7c241a521c0e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd057000da3543a64788527074d512ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd057000da3543a64788527074d512ed"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getInteger</b> (std::string path)</td></tr>
+<tr class="memitem:abd057000da3543a64788527074d512ed"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconfig_1_1_configuration.html#abd057000da3543a64788527074d512ed">getInteger</a> (std::string path)</td></tr>
+<tr class="memdesc:abd057000da3543a64788527074d512ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the configuration value found at a given configuration path.  <a href="#abd057000da3543a64788527074d512ed">More...</a><br/></td></tr>
 <tr class="separator:abd057000da3543a64788527074d512ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abefbef146c8c3eed841572ae39f3b86e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abefbef146c8c3eed841572ae39f3b86e"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getString</b> (std::string path)</td></tr>
+<tr class="memitem:abefbef146c8c3eed841572ae39f3b86e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconfig_1_1_configuration.html#abefbef146c8c3eed841572ae39f3b86e">getString</a> (std::string path)</td></tr>
+<tr class="memdesc:abefbef146c8c3eed841572ae39f3b86e"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the configuration value found at a given configuration path.  <a href="#abefbef146c8c3eed841572ae39f3b86e">More...</a><br/></td></tr>
 <tr class="separator:abefbef146c8c3eed841572ae39f3b86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abed5bed394080e6eeb24ed9399e29193"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abed5bed394080e6eeb24ed9399e29193"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>addSetting</b> (std::string path, std::string name, std::string value)</td></tr>
+<tr class="memitem:abed5bed394080e6eeb24ed9399e29193"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconfig_1_1_configuration.html#abed5bed394080e6eeb24ed9399e29193">addSetting</a> (std::string path, std::string name, std::string value)</td></tr>
+<tr class="memdesc:abed5bed394080e6eeb24ed9399e29193"><td class="mdescLeft">&#160;</td><td class="mdescRight">adds the string setting named <em>name</em> to the configuration tree at <em>path</em> with the value <em>value</em>  <a href="#abed5bed394080e6eeb24ed9399e29193">More...</a><br/></td></tr>
 <tr class="separator:abed5bed394080e6eeb24ed9399e29193"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a055ca75b6048b7b382b8cf17f67fed71"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a055ca75b6048b7b382b8cf17f67fed71"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>editSetting</b> (std::string path, std::string name, double value)</td></tr>
+<tr class="memitem:a055ca75b6048b7b382b8cf17f67fed71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconfig_1_1_configuration.html#a055ca75b6048b7b382b8cf17f67fed71">editSetting</a> (std::string path, std::string name, double value)</td></tr>
+<tr class="memdesc:a055ca75b6048b7b382b8cf17f67fed71"><td class="mdescLeft">&#160;</td><td class="mdescRight">modifies the string setting named <em>name</em> to the configuration tree at <em>path</em> with the value <em>value</em>  <a href="#a055ca75b6048b7b382b8cf17f67fed71">More...</a><br/></td></tr>
 <tr class="separator:a055ca75b6048b7b382b8cf17f67fed71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53dc6ed33e15adf5110e99efb47d925a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53dc6ed33e15adf5110e99efb47d925a"></a>
-libconfig::Setting &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>lookup</b> (const std::string path) const </td></tr>
+<tr class="memitem:a53dc6ed33e15adf5110e99efb47d925a"><td class="memItemLeft" align="right" valign="top">libconfig::Setting &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconfig_1_1_configuration.html#a53dc6ed33e15adf5110e99efb47d925a">lookup</a> (const std::string path) const </td></tr>
+<tr class="memdesc:a53dc6ed33e15adf5110e99efb47d925a"><td class="mdescLeft">&#160;</td><td class="mdescRight">retrieves the configuration value found at a given configuration path as a reference to a libconfig::Setting object. libconfig::Setting objects support automatic conversion to most common data types.  <a href="#a53dc6ed33e15adf5110e99efb47d925a">More...</a><br/></td></tr>
 <tr class="separator:a53dc6ed33e15adf5110e99efb47d925a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87490ba3da7f407b4eca2b86c981d445"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87490ba3da7f407b4eca2b86c981d445"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> () const </td></tr>
@@ -112,8 +130,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getName</b> ()
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a0316d771f04b626c20e77545d6adb414"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0316d771f04b626c20e77545d6adb414"></a>
-static <a class="el" href="classconfig_1_1_configuration.html">Configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>getInstance</b> ()</td></tr>
+<tr class="memitem:a0316d771f04b626c20e77545d6adb414"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classconfig_1_1_configuration.html">Configuration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classconfig_1_1_configuration.html#a0316d771f04b626c20e77545d6adb414">getInstance</a> ()</td></tr>
+<tr class="memdesc:a0316d771f04b626c20e77545d6adb414"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a reference to the only configuration instance  <a href="#a0316d771f04b626c20e77545d6adb414">More...</a><br/></td></tr>
 <tr class="separator:a0316d771f04b626c20e77545d6adb414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
@@ -122,6 +140,309 @@ Friends</h2></td></tr>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>std::auto_ptr&lt; Configuration &gt;</b></td></tr>
 <tr class="separator:a6fb0713e8190849db5354da517c54557"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A configuration object which is populated from a configuration file and allows to query and modify configuration values. </p>
+<p>Essentially this class is just a front-end for the libconfig++ library. For convenience the configuration is a singleton object. * </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="abed5bed394080e6eeb24ed9399e29193"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Configuration::addSetting </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>adds the string setting named <em>name</em> to the configuration tree at <em>path</em> with the value <em>value</em> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path to the configuration value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the setting </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>value of the setting </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a055ca75b6048b7b382b8cf17f67fed71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Configuration::editSetting </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>modifies the string setting named <em>name</em> to the configuration tree at <em>path</em> with the value <em>value</em> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path to the configuration value </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>name of the setting </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>value of the setting </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af87c3782d6aaa16c1b3f71b9bbbb4b51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Configuration::exists </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>determines whether a given configuration value exists. </p>
+<p>Libconfig++ configuration files have the structure of a tree, as they support groups of configuration values which themselves can be elements. A path to a configuration value within this tree uses a . as the separator.</p>
+<p>example: "group1.nestedgroupA.value"</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path to the configuration value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the value is defined otherwise false. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a65fb99ebef567a8b91f7c241a521c0e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Configuration::getBool </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieves the configuration value found at a given configuration path. </p>
+<p>If the lookup fails the function throws a SettingNotFoundException exception.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path to the configuration value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>bool configuration value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1af7b3466bc63633f516885c1ad9bd74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Configuration::getDouble </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieves the configuration value found at a given configuration path. </p>
+<p>If the lookup fails the function throws a SettingNotFoundException exception.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path to the configuration value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double configuration value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0316d771f04b626c20e77545d6adb414"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classconfig_1_1_configuration.html">Configuration</a> &amp; Configuration::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns a reference to the only configuration instance </p>
+<p>If the configuration has not been accessed previously an instance is created. The auto_ptr ensures that the object is properly destructed when the the application closes.</p>
+<dl class="section return"><dt>Returns</dt><dd>reference to the only configuration instance </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abd057000da3543a64788527074d512ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Configuration::getInteger </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieves the configuration value found at a given configuration path. </p>
+<p>If the lookup fails the function throws a SettingNotFoundException exception.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path to the configuration value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>integer configuration value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abefbef146c8c3eed841572ae39f3b86e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Configuration::getString </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>retrieves the configuration value found at a given configuration path. </p>
+<p>If the lookup fails the function throws a SettingNotFoundException exception.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path to the configuration value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string configuration value </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a53dc6ed33e15adf5110e99efb47d925a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">libconfig::Setting&amp; config::Configuration::lookup </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>path</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>retrieves the configuration value found at a given configuration path as a reference to a libconfig::Setting object. libconfig::Setting objects support automatic conversion to most common data types. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">path</td><td>path to the configuration value </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>reference to a Setting object </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7161a346a59b3c3d5038956d3cd00329"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Configuration::readFile </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>configFile</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>parses configuration file configFile and loads the data into object. The configuration file needs to written in the libconfig++ format, see <a href="">libconfig++</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">configFile</td><td>path to the configuration file </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/chris/Documents/Development/Release/nanostructures/config/<a class="el" href="configuration_8h_source.html">configuration.h</a></li>
 <li>/Users/chris/Documents/Development/Release/nanostructures/config/configuration.cpp</li>
@@ -130,7 +451,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>std::auto_ptr&lt; Co
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 1 2014 08:20:48 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 3 2014 09:39:46 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

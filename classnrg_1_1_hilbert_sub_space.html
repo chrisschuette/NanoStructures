@@ -15,12 +15,25 @@
 <link rel='stylesheet' id='google_fonts-css'  href='http://fonts.googleapis.com/css?family=Megrim|Raleway|Open+Sans:400,400italic,700,700italic' type='text/css' media='all' />
 <!-- Font Awesome -->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<!-- MathJax.js --> 
+<!-- Single dollar signs as math-mode delimiters --> 
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
+MathJax.Hub.Config({
+  tex2jax: {
+inlineMath: [['$','$'], ['\\(','\\)']]
+},
+TeX: {
+Macros: {
+RR: "{\\bf  R}",
+vect: ["\\mathbf{#1}",1],
+ket: ["\\left| #1 \\right\\rangle",1],
+bra: ["\\left< #1 \\right|",1],
+avg: ["\\left\\langle #1 \\right\\rangle",1]
+}
+}
 });
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script> 
+<script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -246,15 +259,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>m_nKeptStates</b></td>
 <p>retrieves a reference to chain matrix elements for spin down electrons </p>
 <dl class="section return"><dt>Returns</dt><dd>chain matrix elements for spin down </dd></dl>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_hilbert_sub_space_a4fc335567817b362430b33988b1d5ce8_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_sub_space_a4fc335567817b362430b33988b1d5ce8_icgraph" alt=""/></div>
-<map name="classnrg_1_1_hilbert_sub_space_a4fc335567817b362430b33988b1d5ce8_icgraph" id="classnrg_1_1_hilbert_sub_space_a4fc335567817b362430b33988b1d5ce8_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="262,14,474,45"/><area shape="rect" id="node3" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="523,14,637,45"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a4c8504c3aa68b50f5670cf7fdb1f9815"></a>
@@ -280,15 +284,6 @@ Here is the caller graph for this function:</div>
 
 <p>retrieves a reference to chain matrix elements for spin up electrons </p>
 <dl class="section return"><dt>Returns</dt><dd>chain matrix elements for spin up </dd></dl>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_hilbert_sub_space_a4c8504c3aa68b50f5670cf7fdb1f9815_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_sub_space_a4c8504c3aa68b50f5670cf7fdb1f9815_icgraph" alt=""/></div>
-<map name="classnrg_1_1_hilbert_sub_space_a4c8504c3aa68b50f5670cf7fdb1f9815_icgraph" id="classnrg_1_1_hilbert_sub_space_a4c8504c3aa68b50f5670cf7fdb1f9815_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="241,14,452,45"/><area shape="rect" id="node3" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="501,14,616,45"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -316,15 +311,6 @@ Here is the caller graph for this function:</div>
 <p>returns a reference to the vector of eigenenergies </p>
 <dl class="section return"><dt>Returns</dt><dd>eigenenergies </dd></dl>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_hilbert_sub_space_a1383304e7249e45be7714a1d57a65f48_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_sub_space_a1383304e7249e45be7714a1d57a65f48_icgraph" alt=""/></div>
-<map name="classnrg_1_1_hilbert_sub_space_a1383304e7249e45be7714a1d57a65f48_icgraph" id="classnrg_1_1_hilbert_sub_space_a1383304e7249e45be7714a1d57a65f48_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="238,5,450,35"/><area shape="rect" id="node4" href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="232,59,456,90"/><area shape="rect" id="node3" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="504,5,619,35"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a38e645a168fafd9a1baff2eb1c55c42b"></a>
@@ -350,15 +336,6 @@ Here is the caller graph for this function:</div>
 
 <p>returns reference to the Hamiltonian/unitary transformation After diagonalization Lapack turns this Hamiltonian matrix H into the diagonalizing unitary transformation U. So beware! </p>
 <dl class="section return"><dt>Returns</dt><dd>reference to matrix H/U </dd></dl>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_hilbert_sub_space_a38e645a168fafd9a1baff2eb1c55c42b_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_sub_space_a38e645a168fafd9a1baff2eb1c55c42b_icgraph" alt=""/></div>
-<map name="classnrg_1_1_hilbert_sub_space_a38e645a168fafd9a1baff2eb1c55c42b_icgraph" id="classnrg_1_1_hilbert_sub_space_a38e645a168fafd9a1baff2eb1c55c42b_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="232,14,456,45"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -386,15 +363,6 @@ Here is the caller graph for this function:</div>
 <p>returns the numer of kept states for the subspace </p>
 <dl class="section return"><dt>Returns</dt><dd># of kept states </dd></dl>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_hilbert_sub_space_a04f419a9b01137c9eef25f5beaaee464_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_sub_space_a04f419a9b01137c9eef25f5beaaee464_icgraph" alt=""/></div>
-<map name="classnrg_1_1_hilbert_sub_space_a04f419a9b01137c9eef25f5beaaee464_icgraph" id="classnrg_1_1_hilbert_sub_space_a04f419a9b01137c9eef25f5beaaee464_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="232,14,456,45"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a3739ad6705a655e1cecf2bf2ae3ce0c5"></a>
@@ -420,15 +388,6 @@ Here is the caller graph for this function:</div>
 
 <p>retrieves a reference to impurity matrix elements for spin down electrons Take a look at the "self-energy trick" by R. Bulla </p>
 <dl class="section return"><dt>Returns</dt><dd>impurity matrix elements for spin down </dd></dl>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_hilbert_sub_space_a3739ad6705a655e1cecf2bf2ae3ce0c5_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_sub_space_a3739ad6705a655e1cecf2bf2ae3ce0c5_icgraph" alt=""/></div>
-<map name="classnrg_1_1_hilbert_sub_space_a3739ad6705a655e1cecf2bf2ae3ce0c5_icgraph" id="classnrg_1_1_hilbert_sub_space_a3739ad6705a655e1cecf2bf2ae3ce0c5_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="297,14,508,45"/><area shape="rect" id="node3" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="557,14,672,45"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -456,15 +415,6 @@ Here is the caller graph for this function:</div>
 <p>retrieves a reference to other impurity matrix elements for spin down electrons Take a look at the "self-energy trick" by R. Bulla </p>
 <dl class="section return"><dt>Returns</dt><dd>other impurity matrix elements for spin down </dd></dl>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_hilbert_sub_space_a898671c9307a06510acd15d0473b74c9_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_sub_space_a898671c9307a06510acd15d0473b74c9_icgraph" alt=""/></div>
-<map name="classnrg_1_1_hilbert_sub_space_a898671c9307a06510acd15d0473b74c9_icgraph" id="classnrg_1_1_hilbert_sub_space_a898671c9307a06510acd15d0473b74c9_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="305,14,516,45"/><area shape="rect" id="node3" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="565,14,680,45"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a0469cddd0f12620a19df6d212ff1e765"></a>
@@ -491,15 +441,6 @@ Here is the caller graph for this function:</div>
 <p>retrieves a reference to impurity matrix elements for spin down electrons Take a look at the "self-energy trick" by R. Bulla </p>
 <dl class="section return"><dt>Returns</dt><dd>impurity matrix elements for spin down </dd></dl>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_hilbert_sub_space_a0469cddd0f12620a19df6d212ff1e765_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_sub_space_a0469cddd0f12620a19df6d212ff1e765_icgraph" alt=""/></div>
-<map name="classnrg_1_1_hilbert_sub_space_a0469cddd0f12620a19df6d212ff1e765_icgraph" id="classnrg_1_1_hilbert_sub_space_a0469cddd0f12620a19df6d212ff1e765_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="276,14,487,45"/><area shape="rect" id="node3" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="536,14,651,45"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a2dbc7c43197f64b70df73ba7cffd04e6"></a>
@@ -525,15 +466,6 @@ Here is the caller graph for this function:</div>
 
 <p>retrieves a reference to other impurity matrix elements for spin down electrons Take a look at the "self-energy trick" by R. Bulla </p>
 <dl class="section return"><dt>Returns</dt><dd>other impurity matrix elements for spin down </dd></dl>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_hilbert_sub_space_a2dbc7c43197f64b70df73ba7cffd04e6_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_sub_space_a2dbc7c43197f64b70df73ba7cffd04e6_icgraph" alt=""/></div>
-<map name="classnrg_1_1_hilbert_sub_space_a2dbc7c43197f64b70df73ba7cffd04e6_icgraph" id="classnrg_1_1_hilbert_sub_space_a2dbc7c43197f64b70df73ba7cffd04e6_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="284,14,495,45"/><area shape="rect" id="node3" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="544,14,659,45"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -684,15 +616,6 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_hilbert_sub_space_ad9d2bd279161b253cd7cedb1ebbbc5e0_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_sub_space_ad9d2bd279161b253cd7cedb1ebbbc5e0_icgraph" alt=""/></div>
-<map name="classnrg_1_1_hilbert_sub_space_ad9d2bd279161b253cd7cedb1ebbbc5e0_icgraph" id="classnrg_1_1_hilbert_sub_space_ad9d2bd279161b253cd7cedb1ebbbc5e0_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="238,5,450,35"/><area shape="rect" id="node4" href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="232,59,456,90"/><area shape="rect" id="node3" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="504,5,619,35"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="a3d22197cd5a3a1749c80dcafa6b702d8"></a>
@@ -736,15 +659,6 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_hilbert_sub_space_a3d22197cd5a3a1749c80dcafa6b702d8_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_sub_space_a3d22197cd5a3a1749c80dcafa6b702d8_icgraph" alt=""/></div>
-<map name="classnrg_1_1_hilbert_sub_space_a3d22197cd5a3a1749c80dcafa6b702d8_icgraph" id="classnrg_1_1_hilbert_sub_space_a3d22197cd5a3a1749c80dcafa6b702d8_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="232,14,456,45"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -755,7 +669,7 @@ Here is the caller graph for this function:</div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 1 2014 08:20:48 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 3 2014 09:39:47 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

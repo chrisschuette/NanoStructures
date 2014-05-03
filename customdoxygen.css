@@ -1,5 +1,4 @@
 /* The standard CSS for doxygen */
-
 .container {
 	   margin-top: 30px;
 	   margin-bottom: 30px;
@@ -14,6 +13,10 @@
 	   padding-right: 30px;
 	   padding-top: 30px;
 	   padding-bottom: 30px;
+}
+
+dl.return dt {
+           border-bottom: 1px solid #CCC;
 }
 
 td.entry {

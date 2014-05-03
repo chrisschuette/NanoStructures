@@ -15,12 +15,25 @@
 <link rel='stylesheet' id='google_fonts-css'  href='http://fonts.googleapis.com/css?family=Megrim|Raleway|Open+Sans:400,400italic,700,700italic' type='text/css' media='all' />
 <!-- Font Awesome -->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<!-- MathJax.js --> 
+<!-- Single dollar signs as math-mode delimiters --> 
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
+MathJax.Hub.Config({
+  tex2jax: {
+inlineMath: [['$','$'], ['\\(','\\)']]
+},
+TeX: {
+Macros: {
+RR: "{\\bf  R}",
+vect: ["\\mathbf{#1}",1],
+ket: ["\\left| #1 \\right\\rangle",1],
+bra: ["\\left< #1 \\right|",1],
+avg: ["\\left\\langle #1 \\right\\rangle",1]
+}
+}
 });
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script> 
+<script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -106,7 +119,7 @@
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 1 2014 08:20:48 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 3 2014 09:39:47 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

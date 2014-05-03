@@ -15,12 +15,25 @@
 <link rel='stylesheet' id='google_fonts-css'  href='http://fonts.googleapis.com/css?family=Megrim|Raleway|Open+Sans:400,400italic,700,700italic' type='text/css' media='all' />
 <!-- Font Awesome -->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<!-- MathJax.js --> 
+<!-- Single dollar signs as math-mode delimiters --> 
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
+MathJax.Hub.Config({
+  tex2jax: {
+inlineMath: [['$','$'], ['\\(','\\)']]
+},
+TeX: {
+Macros: {
+RR: "{\\bf  R}",
+vect: ["\\mathbf{#1}",1],
+ket: ["\\left| #1 \\right\\rangle",1],
+bra: ["\\left< #1 \\right|",1],
+avg: ["\\left\\langle #1 \\right\\rangle",1]
+}
+}
 });
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script> 
+<script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -80,7 +93,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <tr id="row_5_" class="even"><td class="entry"><img id="arr_5_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('5_')"/><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classnrg_1_1_chain_provider.html" target="_self">nrg::ChainProvider</a></td><td class="desc"></td></tr>
 <tr id="row_5_0_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classnrg_1_1chain_1_1_flat_band.html" target="_self">nrg::chain::FlatBand</a></td><td class="desc"></td></tr>
 <tr id="row_5_1_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classnrg_1_1chain_1_1_hybridization_provider.html" target="_self">nrg::chain::HybridizationProvider</a></td><td class="desc"></td></tr>
-<tr id="row_6_"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classconfig_1_1_configuration.html" target="_self">config::Configuration</a></td><td class="desc"></td></tr>
+<tr id="row_6_"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classconfig_1_1_configuration.html" target="_self">config::Configuration</a></td><td class="desc">A configuration object which is populated from a configuration file and allows to query and modify configuration values </td></tr>
 <tr id="row_7_" class="even"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classdmft_1_1_d_m_f_t.html" target="_self">dmft::DMFT</a></td><td class="desc"></td></tr>
 <tr id="row_8_"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classdmft_1_1_d_m_f_t_a_b.html" target="_self">dmft::DMFTAB</a></td><td class="desc"></td></tr>
 <tr id="row_9_" class="even"><td class="entry"><img id="arr_9_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('9_')"/><img src="ftv2cl.png" alt="C" width="24" height="22" /><b>exception</b></td><td class="desc"></td></tr>
@@ -106,7 +119,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <tr id="row_23_" class="even"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classnrg_1_1_n_r_g.html" target="_self">nrg::NRG</a></td><td class="desc">Density matrix implementation of the numerical renormalization group </td></tr>
 <tr id="row_24_"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classmpi_1_1_open_m_p_i.html" target="_self">mpi::OpenMPI</a></td><td class="desc"></td></tr>
 <tr id="row_25_" class="even"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classmath_1_1_p_function.html" target="_self">math::PFunction</a></td><td class="desc"></td></tr>
-<tr id="row_26_"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classdebug_1_1_timer.html" target="_self">debug::Timer</a></td><td class="desc"></td></tr>
+<tr id="row_26_"><td class="entry"><img src="ftv2node.png" alt="o" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classdebug_1_1_timer.html" target="_self">debug::Timer</a></td><td class="desc">A simple timer class </td></tr>
 <tr id="row_27_" class="even"><td class="entry"><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><img src="ftv2cl.png" alt="C" width="24" height="22" /><a class="el" href="classmath_1_1_vector.html" target="_self">math::Vector</a></td><td class="desc"></td></tr>
 </table>
 </div><!-- directory -->
@@ -114,7 +127,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:</di
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 1 2014 08:20:48 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 3 2014 09:39:48 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

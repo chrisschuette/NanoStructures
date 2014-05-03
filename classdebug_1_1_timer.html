@@ -15,12 +15,25 @@
 <link rel='stylesheet' id='google_fonts-css'  href='http://fonts.googleapis.com/css?family=Megrim|Raleway|Open+Sans:400,400italic,700,700italic' type='text/css' media='all' />
 <!-- Font Awesome -->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<!-- MathJax.js --> 
+<!-- Single dollar signs as math-mode delimiters --> 
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
+MathJax.Hub.Config({
+  tex2jax: {
+inlineMath: [['$','$'], ['\\(','\\)']]
+},
+TeX: {
+Macros: {
+RR: "{\\bf  R}",
+vect: ["\\mathbf{#1}",1],
+ket: ["\\left| #1 \\right\\rangle",1],
+bra: ["\\left< #1 \\right|",1],
+avg: ["\\left\\langle #1 \\right\\rangle",1]
+}
+}
 });
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script> 
+<script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -75,14 +88,20 @@
 <div class="title">debug::Timer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A simple timer class.  
+ <a href="classdebug_1_1_timer.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="timer_8h_source.html">timer.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a401dec4fae9a58c0e372c603c8d319f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a401dec4fae9a58c0e372c603c8d319f2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>start</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdebug_1_1_timer.html#a401dec4fae9a58c0e372c603c8d319f2">start</a> ()</td></tr>
+<tr class="memdesc:a401dec4fae9a58c0e372c603c8d319f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">saves the current time as the start time. <br/></td></tr>
 <tr class="separator:a401dec4fae9a58c0e372c603c8d319f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac08684586bd5c5c8540d4890852eb276"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac08684586bd5c5c8540d4890852eb276"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>elapsed</b> ()</td></tr>
+<tr class="memitem:ac08684586bd5c5c8540d4890852eb276"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classdebug_1_1_timer.html#ac08684586bd5c5c8540d4890852eb276">elapsed</a> ()</td></tr>
+<tr class="memdesc:ac08684586bd5c5c8540d4890852eb276"><td class="mdescLeft">&#160;</td><td class="mdescRight">determines the elapsed time since start time.  <a href="#ac08684586bd5c5c8540d4890852eb276">More...</a><br/></td></tr>
 <tr class="separator:ac08684586bd5c5c8540d4890852eb276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -91,6 +110,35 @@ Protected Attributes</h2></td></tr>
 struct timeval m_start&#160;</td><td class="memItemRight" valign="bottom"><b>m_end</b></td></tr>
 <tr class="separator:ab376741bedc0b868357bee7dfa96b3b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simple timer class. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ac08684586bd5c5c8540d4890852eb276"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double debug::Timer::elapsed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>determines the elapsed time since start time. </p>
+<dl class="section return"><dt>Returns</dt><dd>elapsed time since start in seconds. </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>/Users/chris/Documents/Development/Release/nanostructures/debug/<a class="el" href="timer_8h_source.html">timer.h</a></li>
 </ul>
@@ -98,7 +146,7 @@ struct timeval m_start&#160;</td><td class="memItemRight" valign="bottom"><b>m_e
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 1 2014 08:20:48 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 3 2014 09:39:46 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,3 +1,12 @@
 <map id="nrg::HilbertSubSpace::getKeptStates" name="nrg::HilbertSubSpace::getKeptStates">
-<area shape="rect" id="node2" href="$classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="232,14,456,45"/>
+<area shape="rect" id="node2" href="$classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="232,5,456,35"/>
+<area shape="rect" id="node5" href="$classnrg_1_1_n_r_g.html#a38d8a5fd44271bd1a246c65b86ee7f82" title="calculates the chain matrix elements for spin&#45; &#160;for a given iteration. " alt="" coords="238,59,450,109"/>
+<area shape="rect" id="node6" href="$classnrg_1_1_n_r_g.html#a99ae89acb88e93156c845c5ecea4612e" title="see propagateChainOperatorElementsUp(int iteration). This is the spin&#45; &#160;version. " alt="" coords="238,133,450,182"/>
+<area shape="rect" id="node7" href="$classnrg_1_1_n_r_g.html#ac35b106fa6225fd965f6b0d77ad4ed14" title="performs a backward run to construct the reduced density matrices " alt="" coords="271,206,417,237"/>
+<area shape="rect" id="node8" href="$classnrg_1_1_n_r_g.html#a6581be9331b44238dd2b4f164de76d3d" title="calculates delta peaks for the spin&#45; &#160;impurity correlator used in the self&#45;energy trick..." alt="" coords="235,261,453,291"/>
+<area shape="rect" id="node9" href="$classnrg_1_1_n_r_g.html#aba0c0ee4eeeb9e97ecf052be4ffa3d82" title="see createPolesF_Down(int iteration). This is the spin&#45; &#160;version. " alt="" coords="507,367,747,398"/>
+<area shape="rect" id="node10" href="$classnrg_1_1_n_r_g.html#a3e17ab2a4393f21a6863b714e3dc0e85" title="calculates delta peaks for the spin&#45; &#160;impurity Green&#39;s function. " alt="" coords="233,315,455,346"/>
+<area shape="rect" id="node11" href="$classnrg_1_1_n_r_g.html#a4ea85b0f075bafa8d67a7a1a5ac670e8" title="see createPolesG_Up(int iteration). This is the spin&#45; &#160;version. " alt="" coords="506,422,748,453"/>
+<area shape="rect" id="node3" href="$classnrg_1_1_n_r_g.html#af9d7e07864134a128a4a0628531ecdcf" title="Version of solve(bool silent) for a Wilson chain with Sz symmetry. " alt="" coords="505,159,748,190"/>
+<area shape="rect" id="node4" href="$classnrg_1_1_n_r_g.html#a54a2a7395b2f9a5b6884b8c44f969d13" title="solves the impurity problem. " alt="" coords="798,213,930,243"/>
 </map>

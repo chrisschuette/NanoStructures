@@ -15,12 +15,25 @@
 <link rel='stylesheet' id='google_fonts-css'  href='http://fonts.googleapis.com/css?family=Megrim|Raleway|Open+Sans:400,400italic,700,700italic' type='text/css' media='all' />
 <!-- Font Awesome -->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<!-- MathJax.js --> 
+<!-- Single dollar signs as math-mode delimiters --> 
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
+MathJax.Hub.Config({
+  tex2jax: {
+inlineMath: [['$','$'], ['\\(','\\)']]
+},
+TeX: {
+Macros: {
+RR: "{\\bf  R}",
+vect: ["\\mathbf{#1}",1],
+ket: ["\\left| #1 \\right\\rangle",1],
+bra: ["\\left< #1 \\right|",1],
+avg: ["\\left\\langle #1 \\right\\rangle",1]
+}
+}
 });
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script> 
+<script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -69,9 +82,9 @@
 <tr id="row_0_" class="even"><td class="entry"><img id="arr_0_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('0_')"/><img id="img_0_" src="ftv2folderopen.png" alt="-" width="24" height="22" onclick="toggleFolder('0_')"/><a class="el" href="dir_50a28221d0f5027093306cfc52a57d36.html" target="_self">cmd</a></td><td class="desc"></td></tr>
 <tr id="row_0_0_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="cmd_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>cmd.h</b></td><td class="desc"></td></tr>
 <tr id="row_1_" class="even"><td class="entry"><img id="arr_1_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('1_')"/><img id="img_1_" src="ftv2folderopen.png" alt="-" width="24" height="22" onclick="toggleFolder('1_')"/><a class="el" href="dir_9f351d46ce3cc29445a41dc3a31e6919.html" target="_self">config</a></td><td class="desc"></td></tr>
-<tr id="row_1_0_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="configuration_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>configuration.h</b></td><td class="desc"></td></tr>
+<tr id="row_1_0_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="configuration_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><a class="el" href="configuration_8h.html" target="_self">configuration.h</a></td><td class="desc">A configuration object which is populated from a configuration file and allows to query and modify configuration values </td></tr>
 <tr id="row_2_" class="even"><td class="entry"><img id="arr_2_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('2_')"/><img id="img_2_" src="ftv2folderopen.png" alt="-" width="24" height="22" onclick="toggleFolder('2_')"/><a class="el" href="dir_84d4ec99856759213102e4209c09c524.html" target="_self">debug</a></td><td class="desc"></td></tr>
-<tr id="row_2_0_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="timer_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>timer.h</b></td><td class="desc"></td></tr>
+<tr id="row_2_0_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="timer_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><a class="el" href="timer_8h.html" target="_self">timer.h</a></td><td class="desc">Simple timer class </td></tr>
 <tr id="row_3_" class="even"><td class="entry"><img id="arr_3_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('3_')"/><img id="img_3_" src="ftv2folderopen.png" alt="-" width="24" height="22" onclick="toggleFolder('3_')"/><a class="el" href="dir_aeb741d6ca3f0a1dcebccc966a77e774.html" target="_self">dmft</a></td><td class="desc"></td></tr>
 <tr id="row_3_0_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="cfcoefficients_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>cfcoefficients.h</b></td><td class="desc"></td></tr>
 <tr id="row_3_1_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="dmft_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>dmft.h</b></td><td class="desc"></td></tr>
@@ -106,7 +119,7 @@
 <tr id="row_8_1_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img id="arr_8_1_" src="ftv2mnode.png" alt="o" width="16" height="22" onclick="toggleFolder('8_1_')"/><img id="img_8_1_" src="ftv2folderopen.png" alt="-" width="24" height="22" onclick="toggleFolder('8_1_')"/><a class="el" href="dir_a47a4853d4459a484ffd8a31a61cc381.html" target="_self">chain</a></td><td class="desc"></td></tr>
 <tr id="row_8_1_0_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="flatband_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>flatband.h</b></td><td class="desc"></td></tr>
 <tr id="row_8_1_1_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2lastnode.png" alt="\" width="16" height="22" /><a href="hybridizationprovider_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>hybridizationprovider.h</b></td><td class="desc"></td></tr>
-<tr id="row_8_2_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="broadener_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>broadener.h</b></td><td class="desc"></td></tr>
+<tr id="row_8_2_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="broadener_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><a class="el" href="broadener_8h.html" target="_self">broadener.h</a></td><td class="desc"></td></tr>
 <tr id="row_8_3_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="chainprovider_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>chainprovider.h</b></td><td class="desc"></td></tr>
 <tr id="row_8_4_" class="even"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="donrg_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><b>donrg.h</b></td><td class="desc"></td></tr>
 <tr id="row_8_5_"><td class="entry"><img src="ftv2vertline.png" alt="|" width="16" height="22" /><img src="ftv2node.png" alt="o" width="16" height="22" /><a href="hilbertspacetable_8h_source.html"><img src="ftv2doc.png" alt="*" width="24" height="22" /></a><a class="el" href="hilbertspacetable_8h.html" target="_self">hilbertspacetable.h</a></td><td class="desc">Hilbert subspace table for charge quantum number Q and spin S </td></tr>
@@ -123,7 +136,7 @@
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 1 2014 08:20:48 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 3 2014 09:39:49 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

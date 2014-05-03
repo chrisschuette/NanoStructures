@@ -1,3 +1,13 @@
 <map id="nrg::HilbertSubSpace::getHamiltonian" name="nrg::HilbertSubSpace::getHamiltonian">
-<area shape="rect" id="node2" href="$classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="232,14,456,45"/>
+<area shape="rect" id="node2" href="$classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="247,5,470,35"/>
+<area shape="rect" id="node5" href="$classnrg_1_1_n_r_g.html#a19d675dae3865b328c582289679f060b" title="deletes all transformation matrices for the indicated iteration. " alt="" coords="233,59,484,109"/>
+<area shape="rect" id="node6" href="$classnrg_1_1_n_r_g.html#a38d8a5fd44271bd1a246c65b86ee7f82" title="calculates the chain matrix elements for spin&#45; &#160;for a given iteration. " alt="" coords="253,133,464,182"/>
+<area shape="rect" id="node7" href="$classnrg_1_1_n_r_g.html#a99ae89acb88e93156c845c5ecea4612e" title="see propagateChainOperatorElementsUp(int iteration). This is the spin&#45; &#160;version. " alt="" coords="253,206,464,255"/>
+<area shape="rect" id="node8" href="$classnrg_1_1_n_r_g.html#ac35b106fa6225fd965f6b0d77ad4ed14" title="performs a backward run to construct the reduced density matrices " alt="" coords="286,279,432,310"/>
+<area shape="rect" id="node9" href="$classnrg_1_1_n_r_g.html#a7c4975dc830c8f9c38c66dc0e877cd3a" title="see propagateLocalMatrixElementUp(int iteration). This is the spin&#45; &#160;version. " alt="" coords="551,447,761,497"/>
+<area shape="rect" id="node10" href="$classnrg_1_1_n_r_g.html#a057fbf412fc125417bf8788ab0a6ef9b" title="calculates other local impurity matrix elements or spin&#45; &#160;for a given iteration. " alt="" coords="254,334,464,383"/>
+<area shape="rect" id="node11" href="$classnrg_1_1_n_r_g.html#ac4f818bc65b105af60350aba50367b84" title="see propagateLocalMatrixElementUp2(int iteration). This is the spin&#45; &#160;version. " alt="" coords="551,521,761,570"/>
+<area shape="rect" id="node12" href="$classnrg_1_1_n_r_g.html#a3a868ffea9b163edd3d067d63952d2ad" title="calculates the local impurity matrix elements or spin&#45; &#160;for a given iteration. " alt="" coords="254,407,464,457"/>
+<area shape="rect" id="node3" href="$classnrg_1_1_n_r_g.html#af9d7e07864134a128a4a0628531ecdcf" title="Version of solve(bool silent) for a Wilson chain with Sz symmetry. " alt="" coords="534,189,778,219"/>
+<area shape="rect" id="node4" href="$classnrg_1_1_n_r_g.html#a54a2a7395b2f9a5b6884b8c44f969d13" title="solves the impurity problem. " alt="" coords="827,267,959,298"/>
 </map>

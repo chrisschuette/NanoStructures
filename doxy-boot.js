@@ -42,6 +42,7 @@ $( document ).ready(function() {
 	$(".memproto").addClass("panel-heading");
 	$(".memdoc").addClass("panel-body");
 	$("span.mlabel").addClass("label label-info");
+        $('*[class^="separator:"]').remove();
 	
 	$("table.memberdecls").addClass("table");
 	$("[class^=memitem]").addClass("active");

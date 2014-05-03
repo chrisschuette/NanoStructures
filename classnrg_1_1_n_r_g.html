@@ -15,12 +15,25 @@
 <link rel='stylesheet' id='google_fonts-css'  href='http://fonts.googleapis.com/css?family=Megrim|Raleway|Open+Sans:400,400italic,700,700italic' type='text/css' media='all' />
 <!-- Font Awesome -->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<!-- MathJax.js --> 
+<!-- Single dollar signs as math-mode delimiters --> 
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
+MathJax.Hub.Config({
+  tex2jax: {
+inlineMath: [['$','$'], ['\\(','\\)']]
+},
+TeX: {
+Macros: {
+RR: "{\\bf  R}",
+vect: ["\\mathbf{#1}",1],
+ket: ["\\left| #1 \\right\\rangle",1],
+bra: ["\\left< #1 \\right|",1],
+avg: ["\\left\\langle #1 \\right\\rangle",1]
+}
+}
 });
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script> 
+<script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -111,41 +124,39 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab4a18a1d48d935fe2f226fe6538a8814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#ab4a18a1d48d935fe2f226fe6538a8814">setTemperature</a> (double T)</td></tr>
 <tr class="memdesc:ab4a18a1d48d935fe2f226fe6538a8814"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the system temperature T  <a href="#ab4a18a1d48d935fe2f226fe6538a8814">More...</a><br/></td></tr>
 <tr class="separator:ab4a18a1d48d935fe2f226fe6538a8814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4e0aac1a11a4901db957b979c43b9ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4e0aac1a11a4901db957b979c43b9ce"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getClusterEnergy</b> () const </td></tr>
+<tr class="memitem:af4e0aac1a11a4901db957b979c43b9ce"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#af4e0aac1a11a4901db957b979c43b9ce">getClusterEnergy</a> () const </td></tr>
+<tr class="memdesc:af4e0aac1a11a4901db957b979c43b9ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the cluster energy.  <a href="#af4e0aac1a11a4901db957b979c43b9ce">More...</a><br/></td></tr>
 <tr class="separator:af4e0aac1a11a4901db957b979c43b9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1a3acc6323287e027b8bef2dd997143"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1a3acc6323287e027b8bef2dd997143"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setClusterEnergy</b> (double clusterEnergy)</td></tr>
+<tr class="memitem:ae1a3acc6323287e027b8bef2dd997143"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#ae1a3acc6323287e027b8bef2dd997143">setClusterEnergy</a> (double clusterEnergy)</td></tr>
+<tr class="memdesc:ae1a3acc6323287e027b8bef2dd997143"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the cluster energy to the indicated value. see <a class="el" href="classnrg_1_1_n_r_g.html#af4e0aac1a11a4901db957b979c43b9ce" title="returns the cluster energy. ">getClusterEnergy()</a>.  <a href="#ae1a3acc6323287e027b8bef2dd997143">More...</a><br/></td></tr>
 <tr class="separator:ae1a3acc6323287e027b8bef2dd997143"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11fd05573490a1116548cfc657094e61"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11fd05573490a1116548cfc657094e61"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getEnergyCutOff</b> () const </td></tr>
+<tr class="memitem:a11fd05573490a1116548cfc657094e61"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a11fd05573490a1116548cfc657094e61">getEnergyCutOff</a> () const </td></tr>
+<tr class="memdesc:a11fd05573490a1116548cfc657094e61"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the high energy cut-off for state truncation  <a href="#a11fd05573490a1116548cfc657094e61">More...</a><br/></td></tr>
 <tr class="separator:a11fd05573490a1116548cfc657094e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebf915bc58252a82cf75bc9a0a66671b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aebf915bc58252a82cf75bc9a0a66671b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setEnergyCutOff</b> (double energyCutOff)</td></tr>
+<tr class="memitem:aebf915bc58252a82cf75bc9a0a66671b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#aebf915bc58252a82cf75bc9a0a66671b">setEnergyCutOff</a> (double energyCutOff)</td></tr>
+<tr class="memdesc:aebf915bc58252a82cf75bc9a0a66671b"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the high energy cut-off for state truncation  <a href="#aebf915bc58252a82cf75bc9a0a66671b">More...</a><br/></td></tr>
 <tr class="separator:aebf915bc58252a82cf75bc9a0a66671b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24986007a997c14f3f5317d53d6694e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24986007a997c14f3f5317d53d6694e5"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxHilbertSpaceDimension</b> ()</td></tr>
+<tr class="memitem:a24986007a997c14f3f5317d53d6694e5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a24986007a997c14f3f5317d53d6694e5">getMaxHilbertSpaceDimension</a> ()</td></tr>
+<tr class="memdesc:a24986007a997c14f3f5317d53d6694e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the maximum allowed size of the HilberSpace. See <a class="el" href="classnrg_1_1_n_r_g.html#a430ab28bf443456a5f61e488305eb308" title="marks all eigenstates above a cut-off energy  as discarded. ">truncateStates(int n)</a>.  <a href="#a24986007a997c14f3f5317d53d6694e5">More...</a><br/></td></tr>
 <tr class="separator:a24986007a997c14f3f5317d53d6694e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d674168a503bb87c5f96facffeed312"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d674168a503bb87c5f96facffeed312"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaxHilbertSpaceDimension</b> (int maxHSdimension)</td></tr>
+<tr class="memitem:a3d674168a503bb87c5f96facffeed312"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a3d674168a503bb87c5f96facffeed312">setMaxHilbertSpaceDimension</a> (int maxHSdimension)</td></tr>
+<tr class="memdesc:a3d674168a503bb87c5f96facffeed312"><td class="mdescLeft">&#160;</td><td class="mdescRight">sets the maximum allowed size of the HilberSpace. See <a class="el" href="classnrg_1_1_n_r_g.html#a430ab28bf443456a5f61e488305eb308" title="marks all eigenstates above a cut-off energy  as discarded. ">truncateStates(int n)</a>.  <a href="#a3d674168a503bb87c5f96facffeed312">More...</a><br/></td></tr>
 <tr class="separator:a3d674168a503bb87c5f96facffeed312"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16d861665f0ac0e3c0bf356cc08cf3b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16d861665f0ac0e3c0bf356cc08cf3b2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getMaxIterations</b> ()</td></tr>
+<tr class="memitem:a16d861665f0ac0e3c0bf356cc08cf3b2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a16d861665f0ac0e3c0bf356cc08cf3b2">getMaxIterations</a> ()</td></tr>
 <tr class="separator:a16d861665f0ac0e3c0bf356cc08cf3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a986c109b4276b419f4e8de09b0295e3e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a986c109b4276b419f4e8de09b0295e3e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaxIterations</b> (int maxIterations)</td></tr>
+<tr class="memitem:a986c109b4276b419f4e8de09b0295e3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a986c109b4276b419f4e8de09b0295e3e">setMaxIterations</a> (int maxIterations)</td></tr>
 <tr class="separator:a986c109b4276b419f4e8de09b0295e3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f798bf64f770334c1b62587cdf59663"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f798bf64f770334c1b62587cdf59663"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getOccupationUp</b> ()</td></tr>
+<tr class="memitem:a0f798bf64f770334c1b62587cdf59663"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a0f798bf64f770334c1b62587cdf59663">getOccupationUp</a> ()</td></tr>
+<tr class="memdesc:a0f798bf64f770334c1b62587cdf59663"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the exp. value for spin- \(\uparrow\) electrons on the impurity. The actual calculation is performed in <a class="el" href="classnrg_1_1_n_r_g.html#a3e17ab2a4393f21a6863b714e3dc0e85" title="calculates delta peaks for the spin-  impurity Green&#39;s function. ">createPolesG_Up(int n)</a>.  <a href="#a0f798bf64f770334c1b62587cdf59663">More...</a><br/></td></tr>
 <tr class="separator:a0f798bf64f770334c1b62587cdf59663"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a048acdb83a27cfe673a82a6a53897f2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a048acdb83a27cfe673a82a6a53897f2c"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getOccupationDown</b> ()</td></tr>
+<tr class="memitem:a048acdb83a27cfe673a82a6a53897f2c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a048acdb83a27cfe673a82a6a53897f2c">getOccupationDown</a> ()</td></tr>
+<tr class="memdesc:a048acdb83a27cfe673a82a6a53897f2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the exp. value for spin- \(\downarrow\) electrons on the impurity. The actual calculation is performed in <a class="el" href="classnrg_1_1_n_r_g.html#a4ea85b0f075bafa8d67a7a1a5ac670e8" title="see createPolesG_Up(int iteration). This is the spin-  version. ">createPolesG_Down(int n)</a>.  <a href="#a048acdb83a27cfe673a82a6a53897f2c">More...</a><br/></td></tr>
 <tr class="separator:a048acdb83a27cfe673a82a6a53897f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d28e59b88fd98e74ff30b0eed34a564"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d28e59b88fd98e74ff30b0eed34a564"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getOccupation</b> ()</td></tr>
+<tr class="memitem:a6d28e59b88fd98e74ff30b0eed34a564"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a6d28e59b88fd98e74ff30b0eed34a564">getOccupation</a> ()</td></tr>
+<tr class="memdesc:a6d28e59b88fd98e74ff30b0eed34a564"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the exp. value for electrons on the impurity. The actual calculation is performed in <a class="el" href="classnrg_1_1_n_r_g.html#a3e17ab2a4393f21a6863b714e3dc0e85" title="calculates delta peaks for the spin-  impurity Green&#39;s function. ">createPolesG_Up(int n)</a> and <a class="el" href="classnrg_1_1_n_r_g.html#a4ea85b0f075bafa8d67a7a1a5ac670e8" title="see createPolesG_Up(int iteration). This is the spin-  version. ">createPolesG_Down(int n)</a>.  <a href="#a6d28e59b88fd98e74ff30b0eed34a564">More...</a><br/></td></tr>
 <tr class="separator:a6d28e59b88fd98e74ff30b0eed34a564"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdc052b754ed41227910a2e963346f55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acdc052b754ed41227910a2e963346f55"></a>
-double&#160;</td><td class="memItemRight" valign="bottom"><b>getMagnetization</b> ()</td></tr>
+<tr class="memitem:acdc052b754ed41227910a2e963346f55"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#acdc052b754ed41227910a2e963346f55">getMagnetization</a> ()</td></tr>
+<tr class="memdesc:acdc052b754ed41227910a2e963346f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the exp. value for the magnetization  <a href="#acdc052b754ed41227910a2e963346f55">More...</a><br/></td></tr>
 <tr class="separator:acdc052b754ed41227910a2e963346f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2761a143fc6a1cf385b91ad95453409a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a">init</a> ()</td></tr>
 <tr class="memdesc:a2761a143fc6a1cf385b91ad95453409a"><td class="mdescLeft">&#160;</td><td class="mdescRight">prepares the <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> instance for the iterative diagonalization.  <a href="#a2761a143fc6a1cf385b91ad95453409a">More...</a><br/></td></tr>
@@ -156,80 +167,82 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>getMagnetization</b
 <tr class="memitem:a61869162fe17cdf5cf34857b9abd132e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e">setupHamiltonian</a> (int iteration)</td></tr>
 <tr class="memdesc:a61869162fe17cdf5cf34857b9abd132e"><td class="mdescLeft">&#160;</td><td class="mdescRight">iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for the corresponding <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a>.  <a href="#a61869162fe17cdf5cf34857b9abd132e">More...</a><br/></td></tr>
 <tr class="separator:a61869162fe17cdf5cf34857b9abd132e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a430ab28bf443456a5f61e488305eb308"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a430ab28bf443456a5f61e488305eb308"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>truncateStates</b> (int iteration)</td></tr>
+<tr class="memitem:a430ab28bf443456a5f61e488305eb308"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a430ab28bf443456a5f61e488305eb308">truncateStates</a> (int iteration)</td></tr>
+<tr class="memdesc:a430ab28bf443456a5f61e488305eb308"><td class="mdescLeft">&#160;</td><td class="mdescRight">marks all eigenstates above a cut-off energy \(E_c\) as discarded.  <a href="#a430ab28bf443456a5f61e488305eb308">More...</a><br/></td></tr>
 <tr class="separator:a430ab28bf443456a5f61e488305eb308"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38d8a5fd44271bd1a246c65b86ee7f82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38d8a5fd44271bd1a246c65b86ee7f82"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>propagateChainOperatorElementsUp</b> (int iteration)</td></tr>
-<tr class="separator:a38d8a5fd44271bd1a246c65b86ee7f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99ae89acb88e93156c845c5ecea4612e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a99ae89acb88e93156c845c5ecea4612e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>propagateChainOperatorElementsDown</b> (int iteration)</td></tr>
-<tr class="separator:a99ae89acb88e93156c845c5ecea4612e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a868ffea9b163edd3d067d63952d2ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a868ffea9b163edd3d067d63952d2ad"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>propagateLocalMatrixElementUp</b> (int iteration)</td></tr>
+<tr class="memitem:a3a868ffea9b163edd3d067d63952d2ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a3a868ffea9b163edd3d067d63952d2ad">propagateLocalMatrixElementUp</a> (int iteration)</td></tr>
+<tr class="memdesc:a3a868ffea9b163edd3d067d63952d2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates the local impurity matrix elements or spin- \(\uparrow\) for a given iteration.  <a href="#a3a868ffea9b163edd3d067d63952d2ad">More...</a><br/></td></tr>
 <tr class="separator:a3a868ffea9b163edd3d067d63952d2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c4975dc830c8f9c38c66dc0e877cd3a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c4975dc830c8f9c38c66dc0e877cd3a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>propagateLocalMatrixElementDown</b> (int iteration)</td></tr>
+<tr class="memitem:a7c4975dc830c8f9c38c66dc0e877cd3a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a7c4975dc830c8f9c38c66dc0e877cd3a">propagateLocalMatrixElementDown</a> (int iteration)</td></tr>
+<tr class="memdesc:a7c4975dc830c8f9c38c66dc0e877cd3a"><td class="mdescLeft">&#160;</td><td class="mdescRight">see <a class="el" href="classnrg_1_1_n_r_g.html#a3a868ffea9b163edd3d067d63952d2ad" title="calculates the local impurity matrix elements or spin-  for a given iteration. ">propagateLocalMatrixElementUp(int iteration)</a>. This is the spin- \(\downarrow\) version.  <a href="#a7c4975dc830c8f9c38c66dc0e877cd3a">More...</a><br/></td></tr>
 <tr class="separator:a7c4975dc830c8f9c38c66dc0e877cd3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a057fbf412fc125417bf8788ab0a6ef9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a057fbf412fc125417bf8788ab0a6ef9b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>propagateLocalMatrixElementUp2</b> (int iteration)</td></tr>
+<tr class="memitem:a057fbf412fc125417bf8788ab0a6ef9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a057fbf412fc125417bf8788ab0a6ef9b">propagateLocalMatrixElementUp2</a> (int iteration)</td></tr>
+<tr class="memdesc:a057fbf412fc125417bf8788ab0a6ef9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates other local impurity matrix elements or spin- \(\uparrow\) for a given iteration.  <a href="#a057fbf412fc125417bf8788ab0a6ef9b">More...</a><br/></td></tr>
 <tr class="separator:a057fbf412fc125417bf8788ab0a6ef9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f818bc65b105af60350aba50367b84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4f818bc65b105af60350aba50367b84"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>propagateLocalMatrixElementDown2</b> (int iteration)</td></tr>
+<tr class="memitem:ac4f818bc65b105af60350aba50367b84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#ac4f818bc65b105af60350aba50367b84">propagateLocalMatrixElementDown2</a> (int iteration)</td></tr>
+<tr class="memdesc:ac4f818bc65b105af60350aba50367b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">see <a class="el" href="classnrg_1_1_n_r_g.html#a057fbf412fc125417bf8788ab0a6ef9b" title="calculates other local impurity matrix elements or spin-  for a given iteration. ">propagateLocalMatrixElementUp2(int iteration)</a>. This is the spin- \(\downarrow\) version.  <a href="#ac4f818bc65b105af60350aba50367b84">More...</a><br/></td></tr>
 <tr class="separator:ac4f818bc65b105af60350aba50367b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e17ab2a4393f21a6863b714e3dc0e85"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e17ab2a4393f21a6863b714e3dc0e85"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createPolesG_Up</b> (int iteration)</td></tr>
+<tr class="memitem:a38d8a5fd44271bd1a246c65b86ee7f82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a38d8a5fd44271bd1a246c65b86ee7f82">propagateChainOperatorElementsUp</a> (int iteration)</td></tr>
+<tr class="memdesc:a38d8a5fd44271bd1a246c65b86ee7f82"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates the chain matrix elements for spin- \(\uparrow\) for a given iteration.  <a href="#a38d8a5fd44271bd1a246c65b86ee7f82">More...</a><br/></td></tr>
+<tr class="separator:a38d8a5fd44271bd1a246c65b86ee7f82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99ae89acb88e93156c845c5ecea4612e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a99ae89acb88e93156c845c5ecea4612e">propagateChainOperatorElementsDown</a> (int iteration)</td></tr>
+<tr class="memdesc:a99ae89acb88e93156c845c5ecea4612e"><td class="mdescLeft">&#160;</td><td class="mdescRight">see <a class="el" href="classnrg_1_1_n_r_g.html#a38d8a5fd44271bd1a246c65b86ee7f82" title="calculates the chain matrix elements for spin-  for a given iteration. ">propagateChainOperatorElementsUp(int iteration)</a>. This is the spin- \(\downarrow\) version.  <a href="#a99ae89acb88e93156c845c5ecea4612e">More...</a><br/></td></tr>
+<tr class="separator:a99ae89acb88e93156c845c5ecea4612e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e17ab2a4393f21a6863b714e3dc0e85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a3e17ab2a4393f21a6863b714e3dc0e85">createPolesG_Up</a> (int iteration)</td></tr>
+<tr class="memdesc:a3e17ab2a4393f21a6863b714e3dc0e85"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates delta peaks for the spin- \(\uparrow\) impurity Green's function.  <a href="#a3e17ab2a4393f21a6863b714e3dc0e85">More...</a><br/></td></tr>
 <tr class="separator:a3e17ab2a4393f21a6863b714e3dc0e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ea85b0f075bafa8d67a7a1a5ac670e8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4ea85b0f075bafa8d67a7a1a5ac670e8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createPolesG_Down</b> (int iteration)</td></tr>
+<tr class="memitem:a4ea85b0f075bafa8d67a7a1a5ac670e8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a4ea85b0f075bafa8d67a7a1a5ac670e8">createPolesG_Down</a> (int iteration)</td></tr>
+<tr class="memdesc:a4ea85b0f075bafa8d67a7a1a5ac670e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">see <a class="el" href="classnrg_1_1_n_r_g.html#a3e17ab2a4393f21a6863b714e3dc0e85" title="calculates delta peaks for the spin-  impurity Green&#39;s function. ">createPolesG_Up(int iteration)</a>. This is the spin- \(\downarrow\) version.  <a href="#a4ea85b0f075bafa8d67a7a1a5ac670e8">More...</a><br/></td></tr>
 <tr class="separator:a4ea85b0f075bafa8d67a7a1a5ac670e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6581be9331b44238dd2b4f164de76d3d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6581be9331b44238dd2b4f164de76d3d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createPolesF_Up</b> (int iteration)</td></tr>
+<tr class="memitem:a6581be9331b44238dd2b4f164de76d3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a6581be9331b44238dd2b4f164de76d3d">createPolesF_Up</a> (int iteration)</td></tr>
+<tr class="memdesc:a6581be9331b44238dd2b4f164de76d3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculates delta peaks for the spin- \(\uparrow\) impurity correlator used in the self-energy trick.  <a href="#a6581be9331b44238dd2b4f164de76d3d">More...</a><br/></td></tr>
 <tr class="separator:a6581be9331b44238dd2b4f164de76d3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba0c0ee4eeeb9e97ecf052be4ffa3d82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba0c0ee4eeeb9e97ecf052be4ffa3d82"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>createPolesF_Down</b> (int iteration)</td></tr>
+<tr class="memitem:aba0c0ee4eeeb9e97ecf052be4ffa3d82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#aba0c0ee4eeeb9e97ecf052be4ffa3d82">createPolesF_Down</a> (int iteration)</td></tr>
+<tr class="memdesc:aba0c0ee4eeeb9e97ecf052be4ffa3d82"><td class="mdescLeft">&#160;</td><td class="mdescRight">see <a class="el" href="classnrg_1_1_n_r_g.html#aba0c0ee4eeeb9e97ecf052be4ffa3d82" title="see createPolesF_Down(int iteration). This is the spin-  version. ">createPolesF_Down(int iteration)</a>. This is the spin- \(\downarrow\) version.  <a href="#aba0c0ee4eeeb9e97ecf052be4ffa3d82">More...</a><br/></td></tr>
 <tr class="separator:aba0c0ee4eeeb9e97ecf052be4ffa3d82"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54a2a7395b2f9a5b6884b8c44f969d13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54a2a7395b2f9a5b6884b8c44f969d13"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>solve</b> (bool silent=false)</td></tr>
+<tr class="memitem:a54a2a7395b2f9a5b6884b8c44f969d13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a54a2a7395b2f9a5b6884b8c44f969d13">solve</a> (bool silent=false)</td></tr>
+<tr class="memdesc:a54a2a7395b2f9a5b6884b8c44f969d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">solves the impurity problem.  <a href="#a54a2a7395b2f9a5b6884b8c44f969d13">More...</a><br/></td></tr>
 <tr class="separator:a54a2a7395b2f9a5b6884b8c44f969d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9d7e07864134a128a4a0628531ecdcf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9d7e07864134a128a4a0628531ecdcf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>solve_symmetric_SZ</b> (bool silent=false)</td></tr>
+<tr class="memitem:af9d7e07864134a128a4a0628531ecdcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#af9d7e07864134a128a4a0628531ecdcf">solve_symmetric_SZ</a> (bool silent=false)</td></tr>
+<tr class="memdesc:af9d7e07864134a128a4a0628531ecdcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Version of <a class="el" href="classnrg_1_1_n_r_g.html#a54a2a7395b2f9a5b6884b8c44f969d13" title="solves the impurity problem. ">solve(bool silent)</a> for a Wilson chain with Sz symmetry.  <a href="#af9d7e07864134a128a4a0628531ecdcf">More...</a><br/></td></tr>
 <tr class="separator:af9d7e07864134a128a4a0628531ecdcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac35b106fa6225fd965f6b0d77ad4ed14"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac35b106fa6225fd965f6b0d77ad4ed14"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>builDM</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#ac35b106fa6225fd965f6b0d77ad4ed14">builDM</a> ()</td></tr>
+<tr class="memdesc:ac35b106fa6225fd965f6b0d77ad4ed14"><td class="mdescLeft">&#160;</td><td class="mdescRight">performs a backward run to construct the reduced density matrices <br/></td></tr>
 <tr class="separator:ac35b106fa6225fd965f6b0d77ad4ed14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91a64d0594ee027093c02c3741c3ce65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91a64d0594ee027093c02c3741c3ce65"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>showInfo</b> ()</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a91a64d0594ee027093c02c3741c3ce65">showInfo</a> ()</td></tr>
+<tr class="memdesc:a91a64d0594ee027093c02c3741c3ce65"><td class="mdescLeft">&#160;</td><td class="mdescRight">lists the physical and numerical parameters for the <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> instance. Also dumps info about the <a class="el" href="classnrg_1_1_broadener.html">Broadener</a> object. <br/></td></tr>
 <tr class="separator:a91a64d0594ee027093c02c3741c3ce65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa0aadddc5b894651858861ecc294c98"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa0aadddc5b894651858861ecc294c98"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteChainOperatorElements</b> (int iteration)</td></tr>
+<tr class="memitem:afa0aadddc5b894651858861ecc294c98"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#afa0aadddc5b894651858861ecc294c98">deleteChainOperatorElements</a> (int iteration)</td></tr>
+<tr class="memdesc:afa0aadddc5b894651858861ecc294c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes all chain operator matrix elements for the indicated iteration.  <a href="#afa0aadddc5b894651858861ecc294c98">More...</a><br/></td></tr>
 <tr class="separator:afa0aadddc5b894651858861ecc294c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19d675dae3865b328c582289679f060b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19d675dae3865b328c582289679f060b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteTransformationMatrices</b> (int iteration)</td></tr>
+<tr class="memitem:a19d675dae3865b328c582289679f060b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a19d675dae3865b328c582289679f060b">deleteTransformationMatrices</a> (int iteration)</td></tr>
+<tr class="memdesc:a19d675dae3865b328c582289679f060b"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes all transformation matrices for the indicated iteration.  <a href="#a19d675dae3865b328c582289679f060b">More...</a><br/></td></tr>
 <tr class="separator:a19d675dae3865b328c582289679f060b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5c5879975d9d739ade31bf646a93e45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5c5879975d9d739ade31bf646a93e45"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteDensityMatrices</b> (int iteration)</td></tr>
+<tr class="memitem:ac5c5879975d9d739ade31bf646a93e45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#ac5c5879975d9d739ade31bf646a93e45">deleteDensityMatrices</a> (int iteration)</td></tr>
+<tr class="memdesc:ac5c5879975d9d739ade31bf646a93e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes all chain operator matrix elements for the indicated iteration.  <a href="#ac5c5879975d9d739ade31bf646a93e45">More...</a><br/></td></tr>
 <tr class="separator:ac5c5879975d9d739ade31bf646a93e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67e6c976eb1c8466ca5278e1c5269fe9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67e6c976eb1c8466ca5278e1c5269fe9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>deleteImpurityMatrixElements</b> (int iteration)</td></tr>
+<tr class="memitem:a67e6c976eb1c8466ca5278e1c5269fe9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a67e6c976eb1c8466ca5278e1c5269fe9">deleteImpurityMatrixElements</a> (int iteration)</td></tr>
+<tr class="memdesc:a67e6c976eb1c8466ca5278e1c5269fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">deletes all impurity operator matrix elements for the indicated iteration.  <a href="#a67e6c976eb1c8466ca5278e1c5269fe9">More...</a><br/></td></tr>
 <tr class="separator:a67e6c976eb1c8466ca5278e1c5269fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc519743d6cdc9924f75329386dd6d00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc519743d6cdc9924f75329386dd6d00"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>getSelfEnergy</b> (<a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;SUp, <a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;SDown)</td></tr>
+<tr class="memitem:acc519743d6cdc9924f75329386dd6d00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#acc519743d6cdc9924f75329386dd6d00">getSelfEnergy</a> (<a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;SUp, <a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;SDown)</td></tr>
+<tr class="memdesc:acc519743d6cdc9924f75329386dd6d00"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the impurity selfenergy.  <a href="#acc519743d6cdc9924f75329386dd6d00">More...</a><br/></td></tr>
 <tr class="separator:acc519743d6cdc9924f75329386dd6d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7beee407b6defe0184e8a2244efa1716"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7beee407b6defe0184e8a2244efa1716"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>getSelfEnergy</b> (<a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;S)</td></tr>
+<tr class="memitem:a7beee407b6defe0184e8a2244efa1716"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a7beee407b6defe0184e8a2244efa1716">getSelfEnergy</a> (<a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;S)</td></tr>
+<tr class="memdesc:a7beee407b6defe0184e8a2244efa1716"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the impurity selfenergy.  <a href="#a7beee407b6defe0184e8a2244efa1716">More...</a><br/></td></tr>
 <tr class="separator:a7beee407b6defe0184e8a2244efa1716"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a593ca3b6cbbdf8580122d4e0ca1e31cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a593ca3b6cbbdf8580122d4e0ca1e31cd"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>getGreensFunction</b> (<a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;GUp, <a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;GDown)</td></tr>
+<tr class="memitem:a593ca3b6cbbdf8580122d4e0ca1e31cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a593ca3b6cbbdf8580122d4e0ca1e31cd">getGreensFunction</a> (<a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;GUp, <a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;GDown)</td></tr>
+<tr class="memdesc:a593ca3b6cbbdf8580122d4e0ca1e31cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the impurity Green's function.  <a href="#a593ca3b6cbbdf8580122d4e0ca1e31cd">More...</a><br/></td></tr>
 <tr class="separator:a593ca3b6cbbdf8580122d4e0ca1e31cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3444274c059c6882e92b8aa49661075f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3444274c059c6882e92b8aa49661075f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>getGreensFunction</b> (<a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;G)</td></tr>
+<tr class="memitem:a3444274c059c6882e92b8aa49661075f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a3444274c059c6882e92b8aa49661075f">getGreensFunction</a> (<a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;G)</td></tr>
+<tr class="memdesc:a3444274c059c6882e92b8aa49661075f"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the Green's function.  <a href="#a3444274c059c6882e92b8aa49661075f">More...</a><br/></td></tr>
 <tr class="separator:a3444274c059c6882e92b8aa49661075f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e165c3840b3b0d76c22bf4722dfcfaf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e165c3840b3b0d76c22bf4722dfcfaf"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>getFFunction</b> (<a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;FUp, <a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;FDown)</td></tr>
+<tr class="memitem:a1e165c3840b3b0d76c22bf4722dfcfaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a1e165c3840b3b0d76c22bf4722dfcfaf">getFFunction</a> (<a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;FUp, <a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;FDown)</td></tr>
+<tr class="memdesc:a1e165c3840b3b0d76c22bf4722dfcfaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the correlator for the self-energy trick  <a href="#a1e165c3840b3b0d76c22bf4722dfcfaf">More...</a><br/></td></tr>
 <tr class="separator:a1e165c3840b3b0d76c22bf4722dfcfaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9041ea15fe240c1660e2bb7c93980f54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9041ea15fe240c1660e2bb7c93980f54"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>getFFunction</b> (<a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;F)</td></tr>
+<tr class="memitem:a9041ea15fe240c1660e2bb7c93980f54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classnrg_1_1_n_r_g.html#a9041ea15fe240c1660e2bb7c93980f54">getFFunction</a> (<a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;F)</td></tr>
+<tr class="memdesc:a9041ea15fe240c1660e2bb7c93980f54"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the correlator for the self-energy trick  <a href="#a9041ea15fe240c1660e2bb7c93980f54">More...</a><br/></td></tr>
 <tr class="separator:a9041ea15fe240c1660e2bb7c93980f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -288,9 +301,9 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>m_temperature</b></
 <tr class="memitem:a067f62343bbb7ec23d68cf15dcead321"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a067f62343bbb7ec23d68cf15dcead321"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>m_maxIterations</b></td></tr>
 <tr class="separator:a067f62343bbb7ec23d68cf15dcead321"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeef3c5a5a68ababaa393646ee47a226f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeef3c5a5a68ababaa393646ee47a226f"></a>
-std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_energies</b></td></tr>
-<tr class="separator:aeef3c5a5a68ababaa393646ee47a226f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd312ad0df86766c8046e18e3af75da1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd312ad0df86766c8046e18e3af75da1"></a>
+std::mathbfor&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_energies</b></td></tr>
+<tr class="separator:abd312ad0df86766c8046e18e3af75da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a071830079d2831e5990343547169d1e5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a071830079d2831e5990343547169d1e5"></a>
 <a class="el" href="classnrg_1_1_hilbert_space_table.html">HilbertSpaceTable</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_hilbertSpaces</b></td></tr>
 <tr class="separator:a071830079d2831e5990343547169d1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -409,6 +422,253 @@ Illustration of the truncation procedure. The</div></div>
 
 </div>
 </div>
+<a class="anchor" id="aba0c0ee4eeeb9e97ecf052be4ffa3d82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::createPolesF_Down </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>see <a class="el" href="classnrg_1_1_n_r_g.html#aba0c0ee4eeeb9e97ecf052be4ffa3d82" title="see createPolesF_Down(int iteration). This is the spin-  version. ">createPolesF_Down(int iteration)</a>. This is the spin- \(\downarrow\) version. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6581be9331b44238dd2b4f164de76d3d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::createPolesF_Up </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculates delta peaks for the spin- \(\uparrow\) impurity correlator used in the self-energy trick. </p>
+<p>This function uses the reduced density matrix and the impurity operator matrix elements to calculate delta peaks of the Lehmann representation of the spin- \(\uparrow\) correlator for the given iteration used in the self-energy trick.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4ea85b0f075bafa8d67a7a1a5ac670e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::createPolesG_Down </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>see <a class="el" href="classnrg_1_1_n_r_g.html#a3e17ab2a4393f21a6863b714e3dc0e85" title="calculates delta peaks for the spin-  impurity Green&#39;s function. ">createPolesG_Up(int iteration)</a>. This is the spin- \(\downarrow\) version. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3e17ab2a4393f21a6863b714e3dc0e85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::createPolesG_Up </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculates delta peaks for the spin- \(\uparrow\) impurity Green's function. </p>
+<p>This function uses the reduced density matrix and the impurity operator matrix elements to calculate delta peaks of the Lehmann representation of the spin- \(\uparrow\) impurity Green's function for the given iteration.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afa0aadddc5b894651858861ecc294c98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::deleteChainOperatorElements </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>deletes all chain operator matrix elements for the indicated iteration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac5c5879975d9d739ade31bf646a93e45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::deleteDensityMatrices </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>deletes all chain operator matrix elements for the indicated iteration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a67e6c976eb1c8466ca5278e1c5269fe9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::deleteImpurityMatrixElements </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>deletes all impurity operator matrix elements for the indicated iteration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a19d675dae3865b328c582289679f060b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::deleteTransformationMatrices </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>deletes all transformation matrices for the indicated iteration. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af4e0aac1a11a4901db957b979c43b9ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double nrg::NRG::getClusterEnergy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the cluster energy. </p>
+<p>Symmetries create degeneracies in the spectrum of eigenstates. Due to numerical noise these states can energetically drift apart by tiny amounts. It is generally not a good idea to cut-off within a multiplet (or "cluster"). It is ensured that no cut is made in between two energy levels less than a certain energy difference apart. This function returns this energy difference.</p>
+<dl class="section return"><dt>Returns</dt><dd>cluster energy </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a11fd05573490a1116548cfc657094e61"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double nrg::NRG::getEnergyCutOff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the high energy cut-off for state truncation </p>
+<dl class="section return"><dt>Returns</dt><dd>high-energy cut-off </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ad0b862f7d9fe2f96b61f8f52daf67924"></a>
 <div class="memitem">
 <div class="memproto">
@@ -432,6 +692,387 @@ Illustration of the truncation procedure. The</div></div>
 
 <p>retrieves the on-site impurity energy \(\epsilon_f\) </p>
 <dl class="section return"><dt>Returns</dt><dd>epsF on-site energy \(\epsilon_f\) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1e165c3840b3b0d76c22bf4722dfcfaf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::getFFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>FUp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>FDown</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the correlator for the self-energy trick </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">FUp</td><td>reference to spin- \(\uparrow\) correlator </td></tr>
+    <tr><td class="paramname">FDown</td><td>reference to spin- \(\downarrow\) correlator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9041ea15fe240c1660e2bb7c93980f54"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::getFFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>F</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the correlator for the self-energy trick </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">F</td><td>reference to spin- \(\uparrow\) correlator </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a593ca3b6cbbdf8580122d4e0ca1e31cd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::getGreensFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>GUp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>GDown</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the impurity Green's function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">GUp</td><td>reference to spin- \(\uparrow\) Green's function </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">GDown</td><td>reference to spin- \(\downarrow\) Green's function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3444274c059c6882e92b8aa49661075f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::getGreensFunction </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>G</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the Green's function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">G</td><td>reference to spin- \(\uparrow\) Green's function </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="acdc052b754ed41227910a2e963346f55"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double nrg::NRG::getMagnetization </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the exp. value for the magnetization </p>
+<p>The actual calculation is performed in <a class="el" href="classnrg_1_1_n_r_g.html#a3e17ab2a4393f21a6863b714e3dc0e85" title="calculates delta peaks for the spin-  impurity Green&#39;s function. ">createPolesG_Up(int n)</a> and <a class="el" href="classnrg_1_1_n_r_g.html#a4ea85b0f075bafa8d67a7a1a5ac670e8" title="see createPolesG_Up(int iteration). This is the spin-  version. ">createPolesG_Down(int n)</a>. The magnetization is calculated as \( \avg{m} = \avg{n_\uparrow} - \avg{\downarrow}\) </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a24986007a997c14f3f5317d53d6694e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nrg::NRG::getMaxHilbertSpaceDimension </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the maximum allowed size of the HilberSpace. See <a class="el" href="classnrg_1_1_n_r_g.html#a430ab28bf443456a5f61e488305eb308" title="marks all eigenstates above a cut-off energy  as discarded. ">truncateStates(int n)</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>max dimension of HilbertSpace </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a16d861665f0ac0e3c0bf356cc08cf3b2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int nrg::NRG::getMaxIterations </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>returns the number of <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iterations to be performed.</p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iterations </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6d28e59b88fd98e74ff30b0eed34a564"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double nrg::NRG::getOccupation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the exp. value for electrons on the impurity. The actual calculation is performed in <a class="el" href="classnrg_1_1_n_r_g.html#a3e17ab2a4393f21a6863b714e3dc0e85" title="calculates delta peaks for the spin-  impurity Green&#39;s function. ">createPolesG_Up(int n)</a> and <a class="el" href="classnrg_1_1_n_r_g.html#a4ea85b0f075bafa8d67a7a1a5ac670e8" title="see createPolesG_Up(int iteration). This is the spin-  version. ">createPolesG_Down(int n)</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a048acdb83a27cfe673a82a6a53897f2c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double nrg::NRG::getOccupationDown </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the exp. value for spin- \(\downarrow\) electrons on the impurity. The actual calculation is performed in <a class="el" href="classnrg_1_1_n_r_g.html#a4ea85b0f075bafa8d67a7a1a5ac670e8" title="see createPolesG_Up(int iteration). This is the spin-  version. ">createPolesG_Down(int n)</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0f798bf64f770334c1b62587cdf59663"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double nrg::NRG::getOccupationUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the exp. value for spin- \(\uparrow\) electrons on the impurity. The actual calculation is performed in <a class="el" href="classnrg_1_1_n_r_g.html#a3e17ab2a4393f21a6863b714e3dc0e85" title="calculates delta peaks for the spin-  impurity Green&#39;s function. ">createPolesG_Up(int n)</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acc519743d6cdc9924f75329386dd6d00"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::getSelfEnergy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>SUp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>SDown</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the impurity selfenergy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">SUp</td><td>reference to spin- \(\uparrow\) self energy </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">SDown</td><td>reference to spin- \(\downarrow\) self energy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7beee407b6defe0184e8a2244efa1716"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::getSelfEnergy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmath_1_1_c_function.html">math::CFunction</a> &amp;&#160;</td>
+          <td class="paramname"><em>S</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the impurity selfenergy. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">S</td><td>reference to spin- \(\uparrow\) self energy </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -502,7 +1143,7 @@ Illustration of the truncation procedure. The</div></div>
 
 <p>prepares the <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> instance for the iterative diagonalization. </p>
 <p>The function performs the following steps: </p>
-<h3>Initialisation</h3>
+<h4>Initialization</h4>
 <ul>
 <li>If the max. iterations have not been set, chooses them automatically based on the system temperature T.</li>
 <li>Checks whether enough <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration will be performed for the given temperature T.</li>
@@ -510,6 +1151,230 @@ Illustration of the truncation procedure. The</div></div>
 <li>Sets the temperature T in the broadeners and initializes them.</li>
 <li>Calls <a class="el" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . ">setupInitialState()</a> to initialize the impurity Hamiltonian \(H_0\). </li>
 </ul>
+
+</div>
+</div>
+<a class="anchor" id="a99ae89acb88e93156c845c5ecea4612e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::propagateChainOperatorElementsDown </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>see <a class="el" href="classnrg_1_1_n_r_g.html#a38d8a5fd44271bd1a246c65b86ee7f82" title="calculates the chain matrix elements for spin-  for a given iteration. ">propagateChainOperatorElementsUp(int iteration)</a>. This is the spin- \(\downarrow\) version. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a38d8a5fd44271bd1a246c65b86ee7f82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::propagateChainOperatorElementsUp </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculates the chain matrix elements for spin- \(\uparrow\) for a given iteration. </p>
+<p>Assuming that we have diagonalised a Wilson chain of length \(m\) and that the eigenstates are given by \(|\mathbf r;m\rangle\) we construct a product basis for the Wilson chain of length \(m+1\) by</p>
+<p>\( \begin{equation} |(\mathbf r,\alpha_{m+1});m+1\rangle = |\mathbf r; m\rangle \otimes |\alpha_{m+1}\rangle \end{equation} \)</p>
+<p>where \(|\alpha_{m+1}\rangle\) are the eigenstates of the decoupled site \(|\alpha_{m+1}\rangle=\{ |\rangle,|\uparrow\rangle,|\downarrow\rangle,| \uparrow \downarrow \rangle \}\). The matrix elements of the Hamiltonian for the Wilson chain of length \(m+1\) for this product basis are given by</p>
+<p>\( \begin{align} \langle(\mathbf r&#39;,\alpha&#39;_{m+1}); m+1| &amp;H_{m+1} |(\mathbf r,\alpha_{m+1}); m+1\rangle = \Lambda^{1/2} E_{\mathbf r,m} \delta_{\mathbf r \mathbf r&#39;} \delta_{\alpha \alpha&#39;} \nonumber \\ &amp;+\left( \langle \mathbf r&#39;; m | f^\dagger_{m\sigma} | \mathbf r;m \rangle \langle \alpha&#39;| f_{m+1\alpha} |\alpha \rangle + \langle \mathbf r&#39;; m | f_{m\sigma} |\mathbf r;m\rangle \langle\alpha&#39;| f^\dagger_{m+1\alpha} |\alpha\rangle\right). \end{align} \)</p>
+<p>It is precisely the matrix elements \( \langle \mathbf r&#39;; m | f^\dagger_{m\uparrow} | \mathbf r;m \rangle \), which are calculated in this function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7c4975dc830c8f9c38c66dc0e877cd3a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::propagateLocalMatrixElementDown </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>see <a class="el" href="classnrg_1_1_n_r_g.html#a3a868ffea9b163edd3d067d63952d2ad" title="calculates the local impurity matrix elements or spin-  for a given iteration. ">propagateLocalMatrixElementUp(int iteration)</a>. This is the spin- \(\downarrow\) version. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ac4f818bc65b105af60350aba50367b84"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::propagateLocalMatrixElementDown2 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>see <a class="el" href="classnrg_1_1_n_r_g.html#a057fbf412fc125417bf8788ab0a6ef9b" title="calculates other local impurity matrix elements or spin-  for a given iteration. ">propagateLocalMatrixElementUp2(int iteration)</a>. This is the spin- \(\downarrow\) version. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3a868ffea9b163edd3d067d63952d2ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::propagateLocalMatrixElementUp </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculates the local impurity matrix elements or spin- \(\uparrow\) for a given iteration. </p>
+<p>Lehmann resolving the impurity spectral function one obtains</p>
+<p>\( \begin{equation} A_\sigma(\omega) = \sum_{a,b} \bra{b} c_{d\sigma}\ket{a} \frac{\exp{\left[ -\beta E_a \right]}}{Z} \bra{a}c_{d\sigma}^\dagger\ket{b} \delta(\omega + E_a - E_b) \end{equation} \)</p>
+<p>where $Z$ is the total partition function $Z =  {[ - E_a ]}$, ${a}$ and ${b}$ are a complete set of states and $E_a$ is the eigenenergy of state ${a}$. We see that the Lehmann representation gathers the necessary information to construct the spectrum from knowledge of certain matrix elements encoding hopping processes between the impurity and the conduction electron band. It is precisely these matrix elements \( \langle \mathbf r&#39;; m | c^\dagger_{\uparrow} | \mathbf r;m \rangle \delta_{\alpha&#39; \alpha} \) which are calculated in this function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a057fbf412fc125417bf8788ab0a6ef9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::propagateLocalMatrixElementUp2 </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculates other local impurity matrix elements or spin- \(\uparrow\) for a given iteration. </p>
+<p>Bulla et al. first showed that it is possible to write the self-energy as the ratio of two correlation functions, both of which can be calculated directly within the <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a>. An equation of motion technique is used to show that the self-energy is given by,</p>
+<p>\( \begin{equation} \Sigma_\sigma(\omega) = U \frac{F_{\sigma}(\omega)}{G_{\sigma}(\omega)} \end{equation} \)</p>
+<p>where $G_{}()$ is the impurity Green's function defined as</p>
+<p>\( \begin{equation} G_{\sigma}(\omega) = -i \int_{-\infty}^\infty dt~e^{ i \omega t } \Theta(t) \avg{ \left\{ f_{\sigma}(t), f_{\sigma}^\dagger \right\} } \end{equation} \)</p>
+<p>and $F_{}()$ is an auxiliary correlation function given by</p>
+<p>\( \begin{equation} F_{\sigma}(\omega) = -i \int_{-\infty}^\infty dt e^{ i \omega t } \Theta(t) \avg{ \left\{ \left( f_{\bar{\sigma}}^\dagger f_{\bar{\sigma}} f_{\sigma}\right)(t), f_{\sigma}^\dagger \right\} } \end{equation} \)</p>
+<p>The imaginary parts of $F_{}()$ and $G_{}()$ are calculated from <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> data using the Lehman sum within the full density matrix approach, with the poles of the spectrum broadened as above. The real parts are then obtained by Kramers-Kronig transform. Discretization artifacts cancel to some extent by dividing the two quantities. This produces a rather smooth self-energy, which in term can be used to calculate an improved spectrum for the impurity. Z-averaging can also be used to further increase accuracy and resolution.</p>
+<p>It is precisely these matrix elements \( \langle \mathbf r&#39;; m | c^\dagger_{\downarrow} c^\phantom{\dagger}_{\downarrow} c^\dagger_{\uparrow} | \mathbf r;m \rangle \delta_{\alpha&#39; \alpha} \) which are calculated in this function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1a3acc6323287e027b8bef2dd997143"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::setClusterEnergy </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>clusterEnergy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sets the cluster energy to the indicated value. see <a class="el" href="classnrg_1_1_n_r_g.html#af4e0aac1a11a4901db957b979c43b9ce" title="returns the cluster energy. ">getClusterEnergy()</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">clusterEnergy</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aebf915bc58252a82cf75bc9a0a66671b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::setEnergyCutOff </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>energyCutOff</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sets the high energy cut-off for state truncation </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">clusterEnergy</td><td>new high-energy cut-off </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -539,6 +1404,70 @@ Illustration of the truncation procedure. The</div></div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">epsF</td><td>on-site energy \(\epsilon_f\) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a3d674168a503bb87c5f96facffeed312"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::setMaxHilbertSpaceDimension </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxHSdimension</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>sets the maximum allowed size of the HilberSpace. See <a class="el" href="classnrg_1_1_n_r_g.html#a430ab28bf443456a5f61e488305eb308" title="marks all eigenstates above a cut-off energy  as discarded. ">truncateStates(int n)</a>. </p>
+<p>It is advisable to set this number to a large value (so that it does not get in the way) and let the energy cut-off( see <a class="el" href="classnrg_1_1_n_r_g.html#aebf915bc58252a82cf75bc9a0a66671b" title="sets the high energy cut-off for state truncation ">setEnergyCutOff(double energyCutOff)</a> ) do the truncation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxHSdimension</td><td>max. dimension of the HilbertSpace </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a986c109b4276b419f4e8de09b0295e3e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::setMaxIterations </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxIterations</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>sets the number of <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iterations to be performed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxIterations</td><td># of <a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iterations </td></tr>
   </table>
   </dd>
 </dl>
@@ -624,7 +1553,7 @@ Illustration of the truncation procedure. The</div></div>
 </div><div class="memdoc">
 
 <p>iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for the corresponding <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a>. </p>
-<p>For a given <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> (HSS) in iteration N the function looks up the appropriate HSSs (up to 4) of iteration N-1 and uses the chain matrix elements to construct the Hamiltonian for the HSS in iteration N. Then the Hamiltonian is diagonalized using a call to Lapack's <a href="http://www.netlib.org/lapack/explore-3.1.1-html/dsyev.f.html">dsyev</a> Lapack replaces the Hamiltonian m_H in the HSS by the unitary transformation that diagonalized it and places the eigenvalues (energies) into the HSS object as well.</p>
+<p>For a given <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> (HSS) in iteration N the function looks up the appropriate HSSs (up to 4) of iteration N-1 and uses the chain matrix elements to construct the Hamiltonian for the HSS in iteration N. Then the Hamiltonian is diagonalized using a call to Lapack's <a href="http://www.netlib.org/lapack/explore-3.1.1-html/dsyev.f.html">dsyev</a> Lapack replaces the Hamiltonian m_H in the HSS by the unitary transformation that diagonalized it and places and sorts the eigenvalues (energies) into the HSS object as well. The function discards the chain matrix elements of iteration N-1, which are no longer needed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
@@ -650,14 +1579,88 @@ Illustration of the truncation procedure. The</div></div>
 <p>initializes the impurity Hamiltonian \(H_0\). </p>
 <p>This function creates the first 4 <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> instances for the chain consisting only of the impurity ( \( \{ |\rangle,|\uparrow\rangle,|\downarrow\rangle,| \uparrow \downarrow \rangle \}\) ). It determines the eigenenergies and both the local impurity and the chain matrix elements. </p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_n_r_g_a360c9dc565beed2c2e741eceb7696036_icgraph.png" border="0" usemap="#classnrg_1_1_n_r_g_a360c9dc565beed2c2e741eceb7696036_icgraph" alt=""/></div>
-<map name="classnrg_1_1_n_r_g_a360c9dc565beed2c2e741eceb7696036_icgraph" id="classnrg_1_1_n_r_g_a360c9dc565beed2c2e741eceb7696036_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="267,5,381,35"/></map>
 </div>
-</p>
+</div>
+<a class="anchor" id="a54a2a7395b2f9a5b6884b8c44f969d13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::solve </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>silent</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>solves the impurity problem. </p>
+<p>First, the function queries the <a class="el" href="classnrg_1_1_chain_provider.html">ChainProvider</a> whether the provided chain is symmetric with respect to the Sz quantum number. If so, it suffices to calculate all matrix elements and correlator for spin- \(\uparrow\) only.</p>
+<p>The algorithm moves along the Wilson chain iteratively in a forward-backward- forward pattern.</p>
+<h4>Step 1 - Forward run: Iterative diagonalization</h4>
+<p>In the first forward run, the Hamiltonian is iteratively constructed and diagonalized (using <a class="el" href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for...">setupHamiltonian(int n)</a> ). Chain matrix elements are calculated along the way as needed. Once the highest eigenenergy of the chain exceeds the predefined threshold value, the truncation sets in (see <a class="el" href="classnrg_1_1_n_r_g.html#a430ab28bf443456a5f61e488305eb308" title="marks all eigenstates above a cut-off energy  as discarded. ">truncateStates(int iteration)</a> ) and only the kept states are used to construct the HilbertSpace of the next iteration.</p>
+<h4>Step 2 - Backward run: Reduced density matrix</h4>
+<p>In a second step, buildDM() is called, which performs a backward run starting from the last iteration and calculates the reduced density matrix for the different iterations.</p>
+<h4>Step 3 - Forward run: Calculation of Correlators</h4>
+<p>In a third step, a forward run is performed which uses the reduced density matrix to calculate impurity matrix elements. The matrices are propagated from iteration to iteration and used to calculate an approximate Lehmann representation of the impurity Green's function and a another correlation function which is needed for the self-energy trick.</p>
+<p>Finally, the discrete set of delta peaks for each correlator is broadened to get continous functions (see <a class="el" href="classnrg_1_1_broadener.html">Broadener</a>).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">silent</td><td>if true, silences the impurity solver (useful for DMFT) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af9d7e07864134a128a4a0628531ecdcf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::solve_symmetric_SZ </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>silent</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Version of <a class="el" href="classnrg_1_1_n_r_g.html#a54a2a7395b2f9a5b6884b8c44f969d13" title="solves the impurity problem. ">solve(bool silent)</a> for a Wilson chain with Sz symmetry. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">silent</td><td>if true, silences the impurity solver (useful for DMFT) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a430ab28bf443456a5f61e488305eb308"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void nrg::NRG::truncateStates </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>marks all eigenstates above a cut-off energy \(E_c\) as discarded. </p>
+<p>The Hilbertspace grows exponentially with the length of the Wilson chain. Therefore the eigenstates have to be truncated above an energy cutoff (see void <a class="el" href="classnrg_1_1_n_r_g.html#aebf915bc58252a82cf75bc9a0a66671b" title="sets the high energy cut-off for state truncation ">setEnergyCutOff(double energyCutOff)</a> ). Only the "kept" states in iteration N-1 with an energy smaller than the cut-off are used to construct the Hilbertspace for iteration N. A separation of energy scales is achieved by the logarithmic discretization of the energy band and justifies the truncation: States with a high energy in iteration N-1 cannot affect the structure of the low-energy states in iteration N.</p>
+<p>Special attention has to be paid to the role of symmetries. Symmetries create degeneracies in the spectrum of eigenstates. Due to numerical noise these states can energetically drift apart by tiny amounts. It is generally not a good idea to cut-off within a multiplet. It is ensured that no cut is made in between two energy levels less than a certain energy difference apart (see void <a class="el" href="classnrg_1_1_n_r_g.html#ae1a3acc6323287e027b8bef2dd997143" title="sets the cluster energy to the indicated value. see getClusterEnergy(). ">setClusterEnergy(double clusterEnergy)</a> ).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">iteration</td><td><a class="el" href="classnrg_1_1_n_r_g.html" title="Density matrix implementation of the numerical renormalization group. ">NRG</a> iteration </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -669,7 +1672,7 @@ Here is the caller graph for this function:</div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 1 2014 08:20:48 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 3 2014 09:39:47 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

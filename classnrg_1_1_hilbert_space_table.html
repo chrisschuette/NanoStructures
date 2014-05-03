@@ -15,12 +15,25 @@
 <link rel='stylesheet' id='google_fonts-css'  href='http://fonts.googleapis.com/css?family=Megrim|Raleway|Open+Sans:400,400italic,700,700italic' type='text/css' media='all' />
 <!-- Font Awesome -->
 <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+<!-- MathJax.js --> 
+<!-- Single dollar signs as math-mode delimiters --> 
 <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    extensions: ["tex2jax.js"],
-    jax: ["input/TeX","output/HTML-CSS"],
+MathJax.Hub.Config({
+  tex2jax: {
+inlineMath: [['$','$'], ['\\(','\\)']]
+},
+TeX: {
+Macros: {
+RR: "{\\bf  R}",
+vect: ["\\mathbf{#1}",1],
+ket: ["\\left| #1 \\right\\rangle",1],
+bra: ["\\left< #1 \\right|",1],
+avg: ["\\left\\langle #1 \\right\\rangle",1]
+}
+}
 });
-</script><script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script> 
+<script type="text/javascript" src="MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> 
 <link href="customdoxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
@@ -156,15 +169,6 @@ Protected Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>pointer to <a class="el" href="classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei...">HilbertSubSpace</a> otherwise NULL </dd></dl>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_hilbert_space_table_af43e350488ce220de077a4337ae2705c_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_space_table_af43e350488ce220de077a4337ae2705c_icgraph" alt=""/></div>
-<map name="classnrg_1_1_hilbert_space_table_af43e350488ce220de077a4337ae2705c_icgraph" id="classnrg_1_1_hilbert_space_table_af43e350488ce220de077a4337ae2705c_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="243,14,466,45"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="af643abf5908019f676f34a17ec24ee5f"></a>
@@ -222,15 +226,6 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classnrg_1_1_hilbert_space_table_af643abf5908019f676f34a17ec24ee5f_icgraph.png" border="0" usemap="#classnrg_1_1_hilbert_space_table_af643abf5908019f676f34a17ec24ee5f_icgraph" alt=""/></div>
-<map name="classnrg_1_1_hilbert_space_table_af643abf5908019f676f34a17ec24ee5f_icgraph" id="classnrg_1_1_hilbert_space_table_af643abf5908019f676f34a17ec24ee5f_icgraph">
-<area shape="rect" id="node2" href="classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="249,5,460,35"/><area shape="rect" id="node4" href="classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="243,59,466,90"/><area shape="rect" id="node3" href="classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="515,5,629,35"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -241,7 +236,7 @@ Here is the caller graph for this function:</div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu May 1 2014 08:20:48 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat May 3 2014 09:39:47 for NanoStructures by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
