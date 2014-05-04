@@ -19,6 +19,11 @@ dl.return dt {
            border-bottom: 1px solid #CCC;
 }
 
+td.memItemLeft {
+	       width: 200px;
+}
+
+
 td.entry {
 	 width: 300px;
 }
