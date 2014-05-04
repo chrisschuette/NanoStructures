@@ -1,6 +1,21 @@
 #ifndef BROADENER_H
 #define BROADENER_H
 
+/**
+ * @file
+ *
+ * @ingroup nrg
+ *
+ * @brief 
+ */
+
+/*
+ * Copyright (c) 2014 Christoph Schuette.
+ *
+ * The license and distribution terms for this file may be
+ * found in the file LICENSE in this distribution
+ */
+
 #include "../math/cfunction.h"
 #include "../config/configuration.h"
 

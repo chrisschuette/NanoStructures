@@ -4,6 +4,7 @@
 #include <fstream>
 #include <string.h>
 #include "../utils/utils_io.h"
+#include "exceptions.h"
 
 namespace math {
 CFunction::CFunction()
@@ -263,7 +264,7 @@ std::complex<double> CFunction::interpolate(double x) {
     {
         std::string message = "Left boundary outside value interval.";
         std::cerr << x << std::endl;
-        throw std::exception();
+        throw error::math::OutOfBounds();
     }
 
     if(x > m_arguments[m_length-1])
@@ -271,7 +272,7 @@ std::complex<double> CFunction::interpolate(double x) {
         std::string message = "Right boundary outside value interval.";
         std::cerr << x << std::endl;
 
-        throw std::exception();
+        throw error::math::OutOfBounds();
     }
 
     int i = 0;
@@ -284,7 +285,7 @@ std::complex<double> CFunction::interpolate(double x) {
         std::string message = "Left boundary outside value interval.";
         std::cerr << x << std::endl;
 
-        throw std::exception();
+        throw error::math::OutOfBounds();
     }
 
     //interpolate between i and i-1
