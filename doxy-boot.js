@@ -43,6 +43,8 @@ $( document ).ready(function() {
 	$(".memdoc").addClass("panel-body");
 	$("span.mlabel").addClass("label label-info");
         $('*[class^="separator:"]').remove();
+        $('*[class^="memitem:"] > td').addClass("narrowItem");
+
 	
 	$("table.memberdecls").addClass("table");
 	$("[class^=memitem]").addClass("active");

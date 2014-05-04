@@ -4,15 +4,33 @@
 	   margin-bottom: 30px;
 }
 
+.narrowItem {
+	    padding: 2px 8px !important;
+}
+
 .backplane {
 	   border-radius: 20px;
-/*	   background: #F0F0F0; */
 	   background:url(img/bg.png);
 	   background-repeat:repeat;
 	   padding-left: 30px;
 	   padding-right: 30px;
 	   padding-top: 30px;
 	   padding-bottom: 30px;
+}
+
+.panel-info {
+	             border-radius: 10px;
+
+}
+
+.panel-heading {
+	       padding: 5px 15px;
+	       border-top-right-radius: 10px;
+	       border-top-left-radius: 10px;
+}
+
+.memitem {
+	 border-radius: 10px;
 }
 
 dl.return dt {
