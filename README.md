@@ -1,4 +1,4 @@
-nanostructures
+NanoStructures
 ==============
 
 NanoStructures is a Dynamical Mean Field Theory (DMFT) solver for layered, strongly correlated nanostructures. The Density Matrix Numerical Renormalization Group (NRG) is used to solve the effective impurity problems. Parallelization using MPI allows to distribute the computational load among compute nodes in HPC cluster environment.
@@ -15,7 +15,7 @@ The following libraries are needed to successfully compile the project*
 
 Documentation
 -------------
-The [documentation](http://chrisschuette.github.io/nanostructures/) can be found here http://chrisschuette.github.io/nanostructures. Although the relevant section of the source code (essentially the NRG and DMFT class) are quite well documented, it is very hard for a reader not familiar with the NRG or DMFT to understand the source code. Consultation of the following references is therefore strongly advised
+The [documentation](http://chrisschuette.github.io/NanoStructures/) can be found here http://chrisschuette.github.io/NanoStructures. Although the relevant section of the source code (essentially the NRG and DMFT class) are quite well documented, it is very hard for a reader not familiar with the NRG or DMFT to understand the source code. Consultation of the following references is therefore strongly advised
 
 References
 ----------
