@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Nanostructures by chrisschuette</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Nanostructures</h1>
+        <p>DMFT solver for layered, strongly correlated nanostructures</p>
+
+        <p class="view"><a href="https://github.com/chrisschuette/NanoStructures">View the Project on GitHub <small>chrisschuette/NanoStructures</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/chrisschuette/NanoStructures/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/chrisschuette/NanoStructures/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/chrisschuette/NanoStructures">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="nanostructures" class="anchor" href="#nanostructures"><span class="octicon octicon-link"></span></a>NanoStructures</h1>
+
+<p>NanoStructures is a Dynamical Mean Field Theory (DMFT) solver for layered, strongly correlated nanostructures. The Density Matrix Numerical Renormalization Group (NRG) is used to solve the effective impurity problems. Parallelization using MPI allows to distribute the computational load among compute nodes in HPC cluster environment.</p>
+
+<h2>
+<a name="required-libraries" class="anchor" href="#required-libraries"><span class="octicon octicon-link"></span></a>Required libraries</h2>
+
+<p>The following libraries are needed to successfully compile the project*</p>
+
+<ul>
+<li><a href="http://www.hyperrealm.com/libconfig/">libconfig</a></li>
+<li><a href="http://www.gnu.org/software/gsl/">GNU Scientific Library</a></li>
+<li><a href="http://www.mpfr.org/">GNU MPFR Library</a></li>
+<li><a href="https://gmplib.org/">GNU Multiple Precision Arithmetic Library (GMP)</a></li>
+<li><a href="http://www.fftw.org/">FFTW 3</a></li>
+<li><a href="http://www.boost.org/doc/libs/1_55_0/doc/html/program_options.html">Boost.Program_options</a></li>
+</ul><h2>
+<a name="documentation" class="anchor" href="#documentation"><span class="octicon octicon-link"></span></a>Documentation</h2>
+
+<p>The <a href="http://chrisschuette.github.io/NanoStructures/">documentation</a> can be found here <a href="http://chrisschuette.github.io/NanoStructures">http://chrisschuette.github.io/NanoStructures</a>. Although the relevant section of the source code (essentially the NRG and DMFT class) are quite well documented, it is very hard for a reader not familiar with the NRG or DMFT to understand the source code. Consultation of the following references is therefore strongly advised</p>
+
+<h2>
+<a name="references" class="anchor" href="#references"><span class="octicon octicon-link"></span></a>References</h2>
+
+<p>The following references provide an introduction to the DMFT and the NRG</p>
+
+<h4>
+<a name="dynamical-mean-field-theory" class="anchor" href="#dynamical-mean-field-theory"><span class="octicon octicon-link"></span></a>Dynamical Mean Field Theory</h4>
+
+<ul>
+<li><a href="http://journals.aps.org/rmp/abstract/10.1103/RevModPhys.68.13">Georges, A., Kotliar, G., Krauth, W., &amp; Rozenberg, M. J. (1996). Dynamical mean-field theory of strongly correlated fermion systems and the limit of infinite dimensions. Reviews of Modern Physics, 68(1), 13.</a></li>
+<li><a href="http://www.physics.rutgers.edu/%7Ekotliar/papers/PT-Kotliar_57_53.pdf">Kotliar, Gabriel, and Dieter Vollhardt. "Strongly correlated materials: Insights from dynamical mean-field theory." Physics Today 57.3 (2004): 53-60.</a></li>
+<li>Pavarini, Eva, et al. The LDA+ DMFT Approach to Strongly Correlated Materials–Lecture Notes of the Autumn School 2011 Hands-on LDA+ DMFT. 2011.</li>
+</ul><h4>
+<a name="numerical-renormalization-group" class="anchor" href="#numerical-renormalization-group"><span class="octicon octicon-link"></span></a>Numerical Renormalization Group</h4>
+
+<ul>
+<li><a href="http://journals.aps.org/rmp/abstract/10.1103/RevModPhys.80.395">Bulla, Ralf, Theo A. Costi, and Thomas Pruschke. "Numerical renormalization group method for quantum impurity systems." Reviews of Modern Physics 80.2 (2008): 395.</a></li>
+<li><a href="http://journals.aps.org/prb/abstract/10.1103/PhysRevB.21.1003">Krishna-Murthy, H. R., J. W. Wilkins, and K. G. Wilson. "Renormalization-group approach to the Anderson model of dilute magnetic alloys. I. Static properties for the symmetric case." Physical Review B 21.3 (1980): 1003.</a></li>
+<li><a href="http://journals.aps.org/prb/abstract/10.1103/PhysRevB.21.1044">Krishna-Murthy, H. R., J. W. Wilkins, and K. G. Wilson. "Renormalization-group approach to the Anderson model of dilute magnetic alloys. II. Static properties for the asymmetric case." Physical Review B 21.3 (1980): 1044.</a></li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/chrisschuette">chrisschuette</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
