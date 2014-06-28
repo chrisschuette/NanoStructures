@@ -1,9 +1,0 @@
-<map id="nrg::HilbertSubSpace::getLocalMatrixElementDown2" name="nrg::HilbertSubSpace::getLocalMatrixElementDown2">
-<area shape="rect" id="node2" href="$classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="318,27,530,58"/>
-<area shape="rect" id="node4" href="$classnrg_1_1_n_r_g.html#a67e6c976eb1c8466ca5278e1c5269fe9" title="deletes all impurity operator matrix elements for the indicated iteration. " alt="" coords="323,103,525,153"/>
-<area shape="rect" id="node7" href="$classnrg_1_1_n_r_g.html#ac4f818bc65b105af60350aba50367b84" title="see propagateLocalMatrixElementUp2(int iteration). This is the spin&#45; &#160;version. " alt="" coords="610,166,820,215"/>
-<area shape="rect" id="node8" href="$classnrg_1_1_n_r_g.html#aba0c0ee4eeeb9e97ecf052be4ffa3d82" title="see createPolesF_Down(int iteration). This is the spin&#45; &#160;version. " alt="" coords="304,233,544,263"/>
-<area shape="rect" id="node3" href="$classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="657,5,772,35"/>
-<area shape="rect" id="node5" href="$classnrg_1_1_n_r_g.html#af9d7e07864134a128a4a0628531ecdcf" title="Version of solve(bool silent) for a Wilson chain with Sz symmetry. " alt="" coords="593,59,836,90"/>
-<area shape="rect" id="node6" href="$classnrg_1_1_n_r_g.html#a54a2a7395b2f9a5b6884b8c44f969d13" title="solves the impurity problem. " alt="" coords="886,145,1018,175"/>
-</map>

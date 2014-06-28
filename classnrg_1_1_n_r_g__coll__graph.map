@@ -1,9 +1,0 @@
-<map id="nrg::NRG" name="nrg::NRG">
-<area shape="rect" id="node3" href="$classmath_1_1_c_function.html" title="math::CFunction" alt="" coords="392,179,533,209"/>
-<area shape="rect" id="node9" href="$classmath_1_1_vector.html" title="math::Vector" alt="" coords="405,572,520,603"/>
-<area shape="rect" id="node10" href="$classmath_1_1_matrix.html" title="math::Matrix" alt="" coords="407,789,518,820"/>
-<area shape="rect" id="node11" href="$classnrg_1_1_chain_provider.html" title="nrg::ChainProvider" alt="" coords="385,1027,540,1057"/>
-<area shape="rect" id="node14" href="$classnrg_1_1_broadener.html" title="nrg::Broadener" alt="" coords="398,517,528,548"/>
-<area shape="rect" id="node8" href="$classnrg_1_1_hilbert_sub_space.html" title="HilbertSubSpace: Hilbert subspace for charge quantum number Q and spin Sz. This class contains the ei..." alt="" coords="787,691,965,721"/>
-<area shape="rect" id="node7" href="$classnrg_1_1_hilbert_space_table.html" title="HilbertSpaceTable: Manages the table of HilbertSubSpace instances. " alt="" coords="1142,631,1330,661"/>
-</map>

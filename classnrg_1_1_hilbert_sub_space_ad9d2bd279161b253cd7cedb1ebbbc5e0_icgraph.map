@@ -1,8 +1,0 @@
-<map id="nrg::HilbertSubSpace::setKeptStates" name="nrg::HilbertSubSpace::setKeptStates">
-<area shape="rect" id="node2" href="$classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="238,5,450,35"/>
-<area shape="rect" id="node4" href="$classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="232,59,456,90"/>
-<area shape="rect" id="node7" href="$classnrg_1_1_n_r_g.html#a430ab28bf443456a5f61e488305eb308" title="marks all eigenstates above a cut&#45;off energy &#160;as discarded. " alt="" coords="244,114,444,145"/>
-<area shape="rect" id="node3" href="$classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="569,5,684,35"/>
-<area shape="rect" id="node5" href="$classnrg_1_1_n_r_g.html#af9d7e07864134a128a4a0628531ecdcf" title="Version of solve(bool silent) for a Wilson chain with Sz symmetry. " alt="" coords="505,111,748,142"/>
-<area shape="rect" id="node6" href="$classnrg_1_1_n_r_g.html#a54a2a7395b2f9a5b6884b8c44f969d13" title="solves the impurity problem. " alt="" coords="798,111,930,142"/>
-</map>

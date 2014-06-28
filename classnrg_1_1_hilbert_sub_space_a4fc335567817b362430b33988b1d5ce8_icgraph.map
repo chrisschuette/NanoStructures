@@ -1,9 +1,0 @@
-<map id="nrg::HilbertSubSpace::getChainElementsDown" name="nrg::HilbertSubSpace::getChainElementsDown">
-<area shape="rect" id="node2" href="$classnrg_1_1_n_r_g.html#a360c9dc565beed2c2e741eceb7696036" title="initializes the impurity Hamiltonian . " alt="" coords="280,26,491,57"/>
-<area shape="rect" id="node4" href="$classnrg_1_1_n_r_g.html#afa0aadddc5b894651858861ecc294c98" title="deletes all chain operator matrix elements for the indicated iteration. " alt="" coords="261,102,509,151"/>
-<area shape="rect" id="node8" href="$classnrg_1_1_n_r_g.html#a99ae89acb88e93156c845c5ecea4612e" title="see propagateChainOperatorElementsUp(int iteration). This is the spin&#45; &#160;version. " alt="" coords="564,218,775,267"/>
-<area shape="rect" id="node3" href="$classnrg_1_1_n_r_g.html#a2761a143fc6a1cf385b91ad95453409a" title="prepares the NRG instance for the iterative diagonalization. " alt="" coords="612,5,727,35"/>
-<area shape="rect" id="node5" href="$classnrg_1_1_n_r_g.html#a61869162fe17cdf5cf34857b9abd132e" title="iterates over all possible quantum number Q and Sz for iteration N and constructs the Hamiltonian for..." alt="" coords="558,111,781,142"/>
-<area shape="rect" id="node6" href="$classnrg_1_1_n_r_g.html#af9d7e07864134a128a4a0628531ecdcf" title="Version of solve(bool silent) for a Wilson chain with Sz symmetry. " alt="" coords="830,165,1074,195"/>
-<area shape="rect" id="node7" href="$classnrg_1_1_n_r_g.html#a54a2a7395b2f9a5b6884b8c44f969d13" title="solves the impurity problem. " alt="" coords="1123,138,1255,169"/>
-</map>

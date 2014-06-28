@@ -1,6 +1,0 @@
-<map id="error::Exception" name="error::Exception">
-<area shape="rect" id="node3" href="$classerror_1_1math_1_1_math_exception.html" title="error::math::MathException" alt="" coords="63,175,280,206"/>
-<area shape="rect" id="node6" href="$classnrg_1_1chain_1_1_hybridization_exception.html" title="nrg::chain::Hybridization\lException" alt="" coords="305,166,500,215"/>
-<area shape="rect" id="node4" href="$classerror_1_1math_1_1_nan.html" title="error::math::Nan" alt="" coords="5,265,141,295"/>
-<area shape="rect" id="node5" href="$classerror_1_1math_1_1_out_of_bounds.html" title="error::math::OutOfBounds" alt="" coords="167,265,375,295"/>
-</map>
