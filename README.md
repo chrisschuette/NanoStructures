@@ -15,7 +15,7 @@ The following libraries are needed to successfully compile the project*
 
 Documentation
 -------------
-The [documentation](http://chrisschuette.github.io/NanoStructures/) can be found here http://chrisschuette.github.io/NanoStructures. Although the relevant section of the source code (essentially the NRG and DMFT class) are quite well documented, it is very hard for a reader not familiar with the NRG or DMFT to understand the source code. Consultation of the following references is therefore strongly advised
+The [documentation](http://chrisschuette.github.io/NanoStructures/documentation) can be found [here](http://chrisschuette.github.io/NanoStructures/documentation). Although the relevant section of the source code (essentially the NRG and DMFT class) are quite well documented, it is very hard for a reader not familiar with the NRG or DMFT to understand the source code. Consultation of the following references is therefore strongly advised
 
 References
 ----------
